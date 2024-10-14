@@ -47,17 +47,6 @@
 <body>
     <div id="app"></div>
     <script>
-        function highlightPowerShell(code) {
-            return code.replace(/\b(function|if|else|elseif|switch|foreach|in|while|param|begin|process|end|return|continue|break|throw|try|catch|finally)\b/gi, '<span class="token keyword">$1</span>')
-                .replace(/\b(Get-\w+|Set-\w+|New-\w+|Remove-\w+|Write-\w+)\b/g, '<span class="token function">$1</span>')
-                .replace(/(\$\w+)/g, '<span class="token variable">$1</span>')
-                .replace(/(#.*)$/gm, '<span class="token comment">$1</span>')
-                .replace(/(".*?")/g, '<span class="token string">$1</span>')
-                .replace(/(-\w+)/g, '<span class="token parameter">$1</span>')
-                .replace(/(\d+)/g, '<span class="token number">$1</span>')
-                .replace(/(\[.*?\])/g, '<span class="token type">$1</span>');
-        }
-
         window.$docsify = {
             name: 'PowerShell Creating Time Course',
             loadSidebar: true,
@@ -68,18 +57,8 @@
             debug: true,
             ext: '.md',
             auto2top: true,
-            search: 'auto',
-            markdown: {
-                renderer: {
-                    code: function(code, lang) {
-                        if (lang === 'powershell') {
-                            return '<pre class="language-powershell"><code>' + highlightPowerShell(code) + '</code></pre>';
-                        }
-                        return this.origin.code.apply(this, arguments);
-                    }
-                }
-            }
-        };
+            search: 'auto'
+        }
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-powershell.min.js"></script>
