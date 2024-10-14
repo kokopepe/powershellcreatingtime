@@ -4,6 +4,7 @@ Welcome to the PowerShell Training course focused on Creating Time. This compreh
 
 ## Course Overview
 
+
 This course is divided into two main parts:
 
 1. Understanding the Shell
