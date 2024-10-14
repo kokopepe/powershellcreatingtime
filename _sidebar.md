@@ -1,0 +1,8 @@
+- [Home](/)
+- [Course Overview](/#course-overview)
+- [PART 1: Understanding the Shell](/#part-1-understanding-the-shell)
+  - [PowerShell Versions](powershell-versions.md)
+  - [Cmdlets 100](cmdlets-100.md)
+- [PART 2: Learning the Language](/#part-2-learning-the-language)
+- [Getting Started](getting-started.md)
+- [Support](support.md)
