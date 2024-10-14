@@ -38,22 +38,36 @@
         }
 
         /* PowerShell syntax highlighting */
-        .token.function { color: #0000FF; }
-        .token.keyword { color: #0000FF; }
-        .token.string { color: #A31515; }
-        .token.number { color: #098658; }
-        .token.operator { color: #000000; }
-        .token.variable { color: #0070C1; }
+        .language-powershell .token.comment { color: #6A9955; }
+        .language-powershell .token.keyword { color: #569CD6; }
+        .language-powershell .token.function { color: #DCDCAA; }
+        .language-powershell .token.string { color: #CE9178; }
+        .language-powershell .token.number { color: #B5CEA8; }
+        .language-powershell .token.operator { color: #D4D4D4; }
+        .language-powershell .token.variable { color: #9CDCFE; }
+        .language-powershell .token.punctuation { color: #D4D4D4; }
+        .language-powershell .token.builtin { color: #4EC9B0; }
 
-        pre[class*="language-"] {
-            background-color: #f6f8fa;
+        pre[class*="language-powershell"] {
+            background-color: #000000;
+            color: #FFFFFF;
+            padding: 1em;
+            margin: .5em 0;
+            overflow: auto;
+            border-radius: 5px;
         }
 
-        code {
-            color: #476582;
-            padding: 0.25rem 0.5rem;
-            background-color: #f6f8fa;
+        code[class*="language-powershell"],
+        pre[class*="language-powershell"] {
+            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+            font-size: 1em;
+            line-height: 1.5;
         }
+
+        /* Additional styles for specific PowerShell elements */
+        .language-powershell .token.parameter { color: #9CDCFE; }
+        .language-powershell .token.command { color: #569CD6; }
+        .language-powershell .token.operator { color: #D4D4D4; }
     </style>
 </head>
 <body>
