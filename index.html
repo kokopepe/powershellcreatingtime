@@ -4,27 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerShell Creating Time Course</title>
-    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/dark.css">
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
     <style>
-        /* Theme color and background adjustments */
         :root {
             --theme-color: #00008B; /* Dark blue */
-            --background-color: #f0f0f0; /* Slightly white background */
+            --sidebar-background: #f4f4f4;
+            --sidebar-nav-link-color: #2c3e50;
+            --sidebar-nav-link-color--active: var(--theme-color);
+            --sidebar-nav-link-font-weight--active: 600;
         }
 
         body {
-            background-color: var(--background-color);
+            background-color: #ffffff;
+            color: #2c3e50;
+        }
+
+        .sidebar {
+            background-color: var(--sidebar-background);
+        }
+
+        .sidebar-nav a {
+            color: var(--sidebar-nav-link-color);
+        }
+
+        .sidebar-nav a:hover, .sidebar-nav a.active {
+            color: var(--sidebar-nav-link-color--active);
+        }
+
+        .markdown-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px 15px;
         }
 
         /* PowerShell syntax highlighting */
-        .token.function { color: #569CD6; }
-        .token.keyword { color: #569CD6; }
-        .token.string { color: #CE9178; }
-        .token.number { color: #B5CEA8; }
-        .token.operator { color: #D4D4D4; }
-        .token.variable { color: #4EC9B0; } /* Add this line for green variables */
+        .token.function { color: #0000FF; }
+        .token.keyword { color: #0000FF; }
+        .token.string { color: #A31515; }
+        .token.number { color: #098658; }
+        .token.operator { color: #000000; }
+        .token.variable { color: #0070C1; }
 
-        /* ... other styles ... */
+        pre[class*="language-"] {
+            background-color: #f6f8fa;
+        }
+
+        code {
+            color: #476582;
+            padding: 0.25rem 0.5rem;
+            background-color: #f6f8fa;
+        }
     </style>
 </head>
 <body>
@@ -36,7 +65,7 @@
             subMaxLevel: 2,
             homepage: 'index.md',
             basePath: '/powershellcreatingtime/',
-            themeColor: '#42b983',
+            themeColor: '#00008B',
             debug: true,
             ext: '.md',
             auto2top: true,
