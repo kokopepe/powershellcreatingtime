@@ -19,7 +19,15 @@
             debug: true,
             ext: '.md',
             auto2top: true,
-            search: 'auto'
+            search: 'auto',
+            plugins: [
+                function(hook) {
+                    hook.afterEach(function(html, next) {
+                        Prism.highlightAll();
+                        next(html);
+                    });
+                }
+            ]
         }
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
