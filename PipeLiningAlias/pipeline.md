@@ -142,11 +142,14 @@ if (<condition>) {
     <code to execute if none of the above conditions are true>
 }
 ```
+
+```powershell
+
 ### ForEach-Object
 
 The `ForEach-Object` cmdlet is used to iterate over each item in a collection and execute a specified block of code for each item.
 
-```powershell
+
 Get-Process | ForEach-Object {
     if ($_.WorkingSet -gt 104857600) {  # 100MB in bytes
         Write-Host "$($_.Name) is using more than 100 MB of memory" -ForegroundColor Red
@@ -156,7 +159,8 @@ Get-Process | ForEach-Object {
         Write-Host "$($_.Name) is using less than 50 MB of memory" -ForegroundColor Green
     }
 }
-``` 
+```
+
 
 
 ## Aliases
