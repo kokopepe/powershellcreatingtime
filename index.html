@@ -6,35 +6,37 @@
     <title>PowerShell Creating Time Course</title>
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
     <style>
-        /* PowerShell syntax highlighting */
-        .language-powershell {
-            color: #DCDCDC; /* Default text color */
+        pre[data-lang="powershell"],
+        pre[data-lang="powershell"] code.lang-powershell {
+            background-color: #1f1d1d !important; /* Dark background */
+            color: #ffffff !important; /* Light gray text color */
         }
-        .language-powershell .token.comment { color: #57A64A !important; }
-        .language-powershell .token.keyword { color: #ffffff !important; }
-        .language-powershell .token.function,
-        .language-powershell .token.command { color: #fdfd00 !important; } /* Changed to yellow */
-        .language-powershell .token.string { color: #076d3d !important; }
-        .language-powershell .token.number { color: #B5CEA8 !important; }
-        .language-powershell .token.operator { color: #ffffff !important; }
-        .language-powershell .token.variable { color: #008634 !important; }
-        .language-powershell .token.punctuation { color: #D4D4D4 !important; }
-        .language-powershell .token.parameter { color: #9CDCFE !important; }
-
-        pre[class*="language-powershell"] {
-            background-color: #0C0C0C !important; /* Darker background for more contrast */
-            padding: 1em;
-            margin: .5em 0;
-            overflow: auto;
-            border-radius: 5px;
+        
+        pre[data-lang="powershell"] * {
+            background-color: transparent !important;
         }
-
-        code[class*="language-powershell"],
-        pre[class*="language-powershell"] {
-            font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-            font-size: 14px;
-            line-height: 1.5;
+        
+        pre[data-lang="powershell"] code.lang-powershell .token.function {
+            color: #cfdb29 !important; /* Yellow color for commands */
         }
+        pre[data-lang="powershell"] code.lang-powershell .token.variable {
+            color: #00ff2a !important; /* Dark green color for variables */
+        }
+        pre[data-lang="powershell"] code.lang-powershell .token.punctuation {
+            color: #FFFFFF !important; /* White color for punctuation */
+        }
+        pre[data-lang="powershell"] code.lang-powershell .token.string {
+            color: #99dbf1 !important; /* Light blue color for strings */
+        }
+        pre[data-lang="powershell"] code.lang-powershell .token.comment {
+        color: #038d03 !important; /* Dark green color for comments */
+    }
+    pre[data-lang="powershell"] code.lang-powershell .token.operator {
+        color: #85a19f !important; /* Dark green color for comments */
+    }
+    pre[data-lang="powershell"] code.lang-powershell .token.keyword {
+        color: #00ff55 !important; /* Dark green color for comments */
+    }
     </style>
 </head>
 <body>
@@ -45,7 +47,9 @@
             loadSidebar: true,
             subMaxLevel: 2,
             homepage: 'index.md',
-            basePath: '/powershellcreatingtime/',
+            basePath: location.hostname === "localhost" || location.hostname === "127.0.0.1"
+                ? '/'
+                : '/PowerShell-Creating-Time-Course/',
             themeColor: '#00008B',
             debug: true,
             ext: '.md',
@@ -56,5 +60,16 @@
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-powershell.min.js"></script>
     <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                var elements = document.querySelectorAll('.language-powershell .token.function, .language-powershell .token.command, .language-powershell .token.builtin');
+                elements.forEach(function(el) {
+                    console.log(el.textContent, window.getComputedStyle(el).color);
+                });
+            }, 1000);
+        });
+    </script>
+    <script src="//localhost:35729/livereload.js?snipver=1" async="" defer=""></script>
 </body>
 </html>
