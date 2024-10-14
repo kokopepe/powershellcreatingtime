@@ -1,7 +1,0 @@
-- [Home](/)
-- [PowerShell Versions](PowershellVersions/index.md)
-- [Cmdlets 100](Cmdlets100/index.md)
-- [Cmdlets 101](Cmdlets101/index.md)
-- [Pipelines](PipeLiningAlias/pipeline.md)
-- [Registry Provider](registryProvider/index.md)
-- [Practice Exercises](PracticeExercises/index.md)
