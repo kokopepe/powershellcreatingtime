@@ -5,6 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PowerShell Creating Time Course</title>
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/dark.css">
+    <style>
+        /* Theme color and background adjustments */
+        :root {
+            --theme-color: #00008B; /* Dark blue */
+            --background-color: #f0f0f0; /* Slightly white background */
+        }
+
+        body {
+            background-color: var(--background-color);
+        }
+
+        /* PowerShell syntax highlighting */
+        .token.function { color: #569CD6; }
+        .token.keyword { color: #569CD6; }
+        .token.string { color: #CE9178; }
+        .token.number { color: #B5CEA8; }
+        .token.operator { color: #D4D4D4; }
+        .token.variable { color: #4EC9B0; } /* Add this line for green variables */
+
+        /* ... other styles ... */
+    </style>
 </head>
 <body>
     <div id="app"></div>
@@ -19,15 +40,7 @@
             debug: true,
             ext: '.md',
             auto2top: true,
-            search: 'auto',
-            plugins: [
-                function(hook) {
-                    hook.afterEach(function(html, next) {
-                        Prism.highlightAll();
-                        next(html);
-                    });
-                }
-            ]
+            search: 'auto'
         }
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
