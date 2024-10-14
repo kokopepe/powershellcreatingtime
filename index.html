@@ -6,51 +6,30 @@
     <title>PowerShell Creating Time Course</title>
     <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
     <style>
-        :root {
-            --theme-color: #00008B; /* Dark blue */
-            --sidebar-background: #f4f4f4;
-            --sidebar-nav-link-color: #2c3e50;
-            --sidebar-nav-link-color--active: var(--theme-color);
-            --sidebar-nav-link-font-weight--active: 600;
-        }
-
-        body {
-            background-color: #ffffff;
-            color: #2c3e50;
-        }
-
-        .sidebar {
-            background-color: var(--sidebar-background);
-        }
-
-        .sidebar-nav a {
-            color: var(--sidebar-nav-link-color);
-        }
-
-        .sidebar-nav a:hover, .sidebar-nav a.active {
-            color: var(--sidebar-nav-link-color--active);
-        }
-
-        .markdown-section {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 30px 15px;
-        }
-
         /* PowerShell syntax highlighting */
-        .language-powershell .token.comment { color: #6A9955; }
+        .language-powershell {
+            color: #CCCCCC; /* Default text color */
+        }
+        .language-powershell .token.comment { color: #57A64A; }
         .language-powershell .token.keyword { color: #569CD6; }
-        .language-powershell .token.function { color: #DCDCAA; }
-        .language-powershell .token.string { color: #CE9178; }
+        .language-powershell .token.function,
+        .language-powershell .token.command { color: #DCDCAA; }
+        .language-powershell .token.string { color: #D69D85; }
         .language-powershell .token.number { color: #B5CEA8; }
         .language-powershell .token.operator { color: #D4D4D4; }
         .language-powershell .token.variable { color: #9CDCFE; }
         .language-powershell .token.punctuation { color: #D4D4D4; }
-        .language-powershell .token.builtin { color: #4EC9B0; }
+        .language-powershell .token.parameter { color: #9CDCFE; }
+
+        /* Specific adjustments */
+        .language-powershell .token.function { color: #DCDCAA; } /* For Get-Process, Write-Host */
+        .language-powershell .token.keyword:not(.control-flow) { color: #569CD6; } /* For ForEach-Object */
+        .language-powershell .token.operator + .token.keyword { color: #569CD6; } /* For -gt */
+        .language-powershell .token.string .token.variable { color: #9CDCFE; } /* For variables inside strings */
+        .language-powershell .token.comment { color: #57A64A; } /* For comments */
 
         pre[class*="language-powershell"] {
-            background-color: #000000;
-            color: #FFFFFF;
+            background-color: #1E1E1E;
             padding: 1em;
             margin: .5em 0;
             overflow: auto;
@@ -60,19 +39,25 @@
         code[class*="language-powershell"],
         pre[class*="language-powershell"] {
             font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-            font-size: 1em;
+            font-size: 14px;
             line-height: 1.5;
         }
-
-        /* Additional styles for specific PowerShell elements */
-        .language-powershell .token.parameter { color: #9CDCFE; }
-        .language-powershell .token.command { color: #569CD6; }
-        .language-powershell .token.operator { color: #D4D4D4; }
     </style>
 </head>
 <body>
     <div id="app"></div>
     <script>
+        function highlightPowerShell(code) {
+            return code.replace(/\b(function|if|else|elseif|switch|foreach|in|while|param|begin|process|end|return|continue|break|throw|try|catch|finally)\b/gi, '<span class="token keyword">$1</span>')
+                .replace(/\b(Get-\w+|Set-\w+|New-\w+|Remove-\w+|Write-\w+)\b/g, '<span class="token function">$1</span>')
+                .replace(/(\$\w+)/g, '<span class="token variable">$1</span>')
+                .replace(/(#.*)$/gm, '<span class="token comment">$1</span>')
+                .replace(/(".*?")/g, '<span class="token string">$1</span>')
+                .replace(/(-\w+)/g, '<span class="token parameter">$1</span>')
+                .replace(/(\d+)/g, '<span class="token number">$1</span>')
+                .replace(/(\[.*?\])/g, '<span class="token type">$1</span>');
+        }
+
         window.$docsify = {
             name: 'PowerShell Creating Time Course',
             loadSidebar: true,
@@ -83,8 +68,18 @@
             debug: true,
             ext: '.md',
             auto2top: true,
-            search: 'auto'
-        }
+            search: 'auto',
+            markdown: {
+                renderer: {
+                    code: function(code, lang) {
+                        if (lang === 'powershell') {
+                            return '<pre class="language-powershell"><code>' + highlightPowerShell(code) + '</code></pre>';
+                        }
+                        return this.origin.code.apply(this, arguments);
+                    }
+                }
+            }
+        };
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-powershell.min.js"></script>
