@@ -14,13 +14,13 @@ Each section is carefully crafted to build your skills progressively, from basic
 
 ## PART 1: Understanding the Shell
 
-1. [PowerShell Versions](PowershellVersions/index.MD)
+1. [PowerShell Versions](PowershellVersions/index.md)
    - Learn about different PowerShell versions and how to set up your environment.
 
 2. [Cmdlets 100](Cmdlets100/index.md)
    - Introduction to basic PowerShell cmdlets.
 
-3. [Cmdlets 101](Cmdlets101/index.MD)
+3. [Cmdlets 101](Cmdlets101/index.md)
    - Advanced cmdlet usage and techniques.
 
 4. [Get-Help](Get-Help/gethelp.md)
@@ -38,7 +38,7 @@ Each section is carefully crafted to build your skills progressively, from basic
 8. [Registry Provider](registryProvider/regproviders.md)
    - Become a command line ninja with registry providers.
 
-9. [Practice Exercises](PracticeExercises/UserParameters/index.MD)
+9. [Practice Exercises](PracticeExercises/UserParameters/index.md)
    - Hands-on exercises to reinforce your learning.
 
 ## PART 2: Learning the Language

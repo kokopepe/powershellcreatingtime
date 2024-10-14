@@ -25,7 +25,6 @@ Get-Verb
 
 This standardization helps you predict cmdlet names and understand their functions.
 
-
 ### 2. **Parameters**: 
 Cmdlets accept parameters to modify their behavior or specify what information you want. For example:
 
