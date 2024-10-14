@@ -1,6 +1,5 @@
 # CreatingTimeCourse
 
-
 Welcome to the PowerShell Training course focused on Creating Time. This comprehensive program is designed to help you master PowerShell skills that will save you time and increase your productivity in your daily tasks.
 
 ## Course Overview
