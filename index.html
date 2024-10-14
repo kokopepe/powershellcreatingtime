@@ -11,18 +11,19 @@
     <script>
         window.$docsify = {
             name: 'PowerShell Creating Time Course',
-            loadSidebar: true,        // Enables a sidebar if you want to add navigation later
-            subMaxLevel: 2,            // Adjust this based on the depth of your headers
-            homepage: 'index.md',      // Sets the homepage to your current index.md file
-            basePath: '/powershellcreatingtime/', // Update this line
-            themeColor: '#42b983',      // Optional: sets a theme color
-            // Add debug option
-            debug: true
+            loadSidebar: true,
+            subMaxLevel: 2,
+            homepage: 'index.md',
+            basePath: '/powershellcreatingtime/',
+            themeColor: '#42b983',
+            debug: true,
+            ext: '.md',
+            auto2top: true,
+            search: 'auto'
         }
     </script>
     <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-    <script src="//unpkg.com/prismjs/prism.js"></script>
     <script src="//unpkg.com/prismjs/components/prism-powershell.min.js"></script>
-    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
 </body>
 </html>
