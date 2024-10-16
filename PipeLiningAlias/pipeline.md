@@ -13,7 +13,7 @@ Imagine a car manufacturing assembly line:
 3. Another station paints the cars (ConvertTo-Html formats the data).
 4. The final station packages the cars for shipping (Out-File saves the result to a file).
 
-In this analogy, $_ or $PSItem is like a worker at each station. This worker knows exactly which car (or piece of data) they're working on at any given moment.
+In this analogy, **$_** or **$PSItem** is like a worker at each station. This worker knows exactly which car (or piece of data) they're working on at any given moment.
 
 ### One Item at a Time
 
