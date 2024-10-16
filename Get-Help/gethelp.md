@@ -16,6 +16,13 @@ To get help on any cmdlet, simply type `Get-Help` followed by the cmdlet name:
 ````powershell
 Get-Help Get-Process
 ````
+## Update Help
+
+The `Update-Help` cmdlet downloads the latest help content, including new cmdlets and updated information. It retrieves `.help.xml` files for all installed modules, ensuring you have the most current documentation.
+```` powershell
+Update-Help
+````
+
 ### Detailed Help
 
 This will display basic information about the `Get-Process` cmdlet.
@@ -41,12 +48,12 @@ Get-Help Get-Process -Online
 Get-Help Get-Process -Examples
 ````
 
-## Update Help
+> Use `Show-Command` for a GUI interface to explore parameters:
+   ```powershell
+   Show-Command Get-Process
+   ```
 
-The `Update-Help` cmdlet downloads the latest help content, including new cmdlets and updated information. It retrieves `.help.xml` files for all installed modules, ensuring you have the most current documentation.
-```` powershell
-Update-Help
-````
+
 
 ## Understanding Parameters in Help
 
@@ -66,6 +73,43 @@ Example:
 Get-Help Get-Process -Parameter Name
 ```
 
+
+
+# Understanding PowerShell Parameters
+
+PowerShell cmdlets use various types of parameters to control their behavior. Let's break down the key concepts:
+
+## Types of Parameters
+
+| Parameter Type | Description | Example |
+|----------------|-------------|---------|
+| Optional | Not required for the cmdlet to run | `-Verbose` |
+| Mandatory | Must be provided for the cmdlet to function | `-Path` in `Set-Location` |
+| Named | Explicitly specified by their names | `-Name "Process1"` |
+| Positional | Can be used without specifying the parameter name | `Get-Process winlogon` |
+| Switched | Act as boolean flags | `-Force` |
+| Default Value | Have a pre-set value if not specified | `-ErrorAction` defaults to `Continue` |
+
+## Parameter Syntax
+
+
+
+```powershell
+Cmdlet-Name -ParameterName ParameterValue
+```
+
+## Visual Representation
+
+```powershell
+Get-ChildItem -Recurse -Filter *.ps1 | Select-Object name,length
+|----------| |------| |--------|   |------------| |---------|
+   Cmdlet    Switch   Named      Pipeline    Cmdlet   Positional
+             Param    Param      Operator            Parameters
+```
+
+
+
+
 ## Challenge 
 
 Let's explore the `Out-File` cmdlet using `Get-Help`. 
@@ -76,3 +120,12 @@ Find out the answers to the following questions:
 3. Which parameter is mandatory for `Out-File`?
 4. Is there a parameter to specify the encoding of the output file? (Yes/No)
 5. What does the `-NoNewline` parameter do? (Brief explanation)
+
+## Find out what parameters a cmdlet has
+
+Use the `Get-Help` cmdlet to examine the `Set-Location` cmdlet. 
+
+1. Which parameter is mandatory?
+2. List three optional parameters.
+3. Write a command using `Set-Location` with both a mandatory and an optional parameter.
+4. List  switch parameters for this cmdlet.
