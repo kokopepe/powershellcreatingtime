@@ -4,7 +4,6 @@ Welcome to the PowerShell Training course focused on Creating Time. This compreh
 
 ## Course Overview
 
-
 This course is divided into two main parts:
 
 1. Understanding the Shell
@@ -14,39 +13,45 @@ Each section is carefully crafted to build your skills progressively, from basic
 
 ## PART 1: Understanding the Shell
 
-1. [PowerShell Versions](PowershellVersions/index.md)
+1. [PowerShell Versions](part1/PowershellVersions/index.md)
    - Learn about different PowerShell versions and how to set up your environment.
 
-2. [Cmdlets 100](Cmdlets100/index.md)
+2. [Cmdlets 100](part1/Cmdlets100/index.md)
    - Introduction to basic PowerShell cmdlets.
 
-3. [Cmdlets 101](Cmdlets101/index.md)
+3. [Cmdlets 101](part1/Cmdlets101/index.md)
    - Advanced cmdlet usage and techniques.
 
-4. [Get-Help](Get-Help/gethelp.md)
+4. [Get-Help](part1/Get-Help/gethelp.md)
    - Learn how to get help on PowerShell cmdlets.
 
-5. [PipeLines](PipeLiningAlias/pipeline.md)
+5. [PipeLines](part1/PipeLiningAlias/pipeline.md)
    - Master the powerful concept of pipelines in PowerShell.
 
-6. [The Every Day Use cmdlets](TheParetoCmdlets/paretocmdlets.md)
+6. [The Every Day Use cmdlets](part1/TheParetoCmdlets/paretocmdlets.md)
    - How to use Select-Object, Where-Object and ForEach-Object
 
-7. [Calculated Properties](CalculatedProperties/calculatedProperties.md)
+7. [Calculated Properties](part1/CalculatedProperties/calculatedProperties.md)
    - How to use calculated properties to create custom properties on the fly.
 
-8. [Registry Provider](registryProvider/regproviders.md)
+8. [Registry Provider](part1/registryProvider/regproviders.md)
    - Become a command line ninja with registry providers.
 
-9. [Practice Exercises](PracticeExercises/UserParameters/index.md)
+9. [Practice Exercises](part1/PracticeExercises/UserParameters/index.md)
    - Hands-on exercises to reinforce your learning.
 
 ## PART 2: Learning the Language
 
-6. [PowerShell Variables and Data Types](variableslogic101/variablelogic.md)
+1. [PowerShell Variables and Data Types](part2/variableslogic101/variablelogic.md)
    - Introduction to Variables
    - Declaring and using variables
    - Data types (strings, integers, arrays, booleans)
+
+2. [Comparison Operators](part2/comparison/index.md)
+   - Understanding and using comparison operators in PowerShell
+
+3. [Object-Oriented Programming](part2/objectoriented/index.md)
+   - Introduction to object-oriented concepts in PowerShell
 
 ... (more sections to be added) ...
 

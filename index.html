@@ -58,7 +58,9 @@
             auto2top: true,
             search: 'auto',
             alias: {
-                '/.*/sidebar.md': '/sidebar.md'
+                '/.*/_sidebar.md': '/sidebar.md',
+                '/part1/(.*)': '/part1/$1',
+                '/part2/(.*)': '/part2/$1'
             }
         }
     </script>
