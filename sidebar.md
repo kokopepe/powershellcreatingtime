@@ -9,11 +9,14 @@
   - [The Every Day Use cmdlets](part1/TheParetoCmdlets/paretocmdlets.md)
   - [Calculated Properties](part1/CalculatedProperties/calculatedProperties.md)
   - [Registry Provider](part1/registryProvider/regproviders.md)
+  - [Comparison Operators](part1/comparison/index.md)
   - [Practice Exercises](part1/PracticeExercises/UserParameters/index.md)
 
 - Part 2: Learning the Language
   - [Variables and Data Types](part2/variableslogic101/variablelogic.md)
-  - [Comparison Operators](part2/comparison/index.md)
-  - [Object-Oriented Programming](part2/objectoriented/index.md)
+  - [Object-Oriented Programming](part2/objectoriented/objectoriented.md)
+  - [Get-Date](part2/getdate/getdate.md)
+  - [Arrays](part2/arrays/arrays.md)
 
-- [Modules](modules/index.md)
+
+
