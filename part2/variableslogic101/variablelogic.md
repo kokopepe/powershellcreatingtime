@@ -69,4 +69,5 @@ $name = "John"
 $name.GetType()
 $age = 30
 $age.GetType()
-```
+
+

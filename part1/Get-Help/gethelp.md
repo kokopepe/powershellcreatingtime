@@ -101,10 +101,11 @@ Cmdlet-Name -ParameterName ParameterValue
 ## Visual Representation
 
 ```powershell
+
 Get-ChildItem -Recurse -Filter *.ps1 | Select-Object name,length
-|----------| |------| |--------|   |------------| |---------|
-   Cmdlet    Switch   Named      Pipeline    Cmdlet   Positional
-             Param    Param      Operator            Parameters
+|----------| |------| |--------|       |------------| |---------|
+   Cmdlet    Switch   Named               Cmdlet   Positional
+             Param    Param            Param    Param
 ```
 
 

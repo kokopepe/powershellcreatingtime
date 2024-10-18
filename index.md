@@ -53,7 +53,10 @@ Each section is carefully crafted to build your skills progressively, from basic
 3. [Object-Oriented Programming](part2/objectoriented/index.md)
    - Introduction to object-oriented concepts in PowerShell
 
-... (more sections to be added) ...
+4. [Get-Date](part2/getdate/getdate.md)
+   - The DatimeTime Object. How to use Get-Date.
+
+
 
 ## Getting Started
 

@@ -59,6 +59,31 @@ As you progress, we will learn how to combine these building blocks to create po
 
 > Note: The `*` wildcard can be used with some parameters to match multiple items. For instance, `"Win*"` matches all services that start with "Win".
 
+
+## Aliases
+
+Aliases in PowerShell are shortcuts or alternate names for cmdlets. 
+They allow for quicker typing and can make command-line operations more efficient.
+
+Some common aliases include are well known to keep dos/linux experience:
+- `ls` or `dir` for `Get-ChildItem`
+- `cd` for `Set-Location`
+- `cls` for `Clear-Host`
+
+You can view all aliases using the `Get-Alias` cmdlet.
+
+### Quick Exercise:
+
+Try to find out what `?` and `%` mean in PowerShell. These are aliases for commonly used cmdlets in pipelines.
+
+Hint: Use `Get-Alias ?` and `Get-Alias %` to discover their meanings.
+
+While aliases are great for interactive use, it's generally recommended to use full cmdlet names in scripts for better readability and maintainability.
+
+
+In future lessons, we'll explore essential PowerShell discovery commands like Get-Help, Get-Command, and Get-Member. These will help you understand cmdlet parameters, find relevant commands, and explore object properties, enhancing your ability to construct effective PowerShell commands and pipelines.
+
+
 ## Exercise 1: Finding Firewall-related Cmdlets
 
 Imagine we need to find something related to Firewalls. Let's use `Get-Command` to help us:
