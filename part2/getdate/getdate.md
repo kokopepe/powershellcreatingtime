@@ -5,21 +5,56 @@ In PowerShell, working with dates and times is a common task, and the `Get-Date`
 ```powershell
 $today = Get-Date
 
-Display the full DateTime object
+# Display the full DateTime object
 $currentDateTime
-Access specific properties
+# Access specific properties
 $currentDateTime.Year
 $currentDateTime.Month
 $currentDateTime.Day
 $currentDateTime.Hour
 ```
 
+### Exploring Get-Date with Get-Member
+
+The `Get-Member` cmdlet is a powerful tool for discovering the properties and methods of objects in PowerShell. We can use it to explore the `DateTime` object returned by `Get-Date`:
+
+```powershell
+Get-Date | Get-Member
+```
+
+```powershell
+Get-Date | Get-Member -MemberType Property
+Get-Date | Get-Member -MemberType Method
+```
+
+
+This command will display all the properties and methods available on the `DateTime` object. Some key properties include:
+
+- `Date`: Gets the date component of the `DateTime` object.
+- `DayOfWeek`: Gets the day of the week represented by this `DateTime` instance.
+- `DayOfYear`: Gets the day of the year represented by this `DateTime` instance.
+- `TimeOfDay`: Gets the time of day for this instance.
+
+You can also use `Get-Member` to explore specific property types:
+
+```powershell
+Get-Date | Get-Member -MemberType Property
+Get-Date | Get-Member -MemberType Method
+```
+
+These commands will show you only the properties or methods of the `DateTime` object, respectively.
+
+### Formatting Dates
+
+[Microsoft Format Datetime](https://learn.microsoft.com/en-us/system-center/orchestrator/standard-activities/format-date-time?view=sc-orch-2022)
 
 ```powershell
 Get-Date -Format "yyyy-MM-dd" # Outputs: 2023-04-15
 Get-Date -Format "dddd, MMMM dd, yyyy" # Outputs: Saturday, April 15, 2023
 Get-Date -Format "HH:mm:ss" # Outputs: 14:30:45
 ```
+
+### Date Arithmetic
 
 ```powershell
 $tomorrow = (Get-Date).AddDays(1)

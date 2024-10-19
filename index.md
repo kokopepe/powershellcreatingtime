@@ -47,25 +47,30 @@ Each section is carefully crafted to build your skills progressively, from basic
    - Declaring and using variables
    - Data types (strings, integers, arrays, booleans)
 
-2. [Comparison Operators](part2/comparison/index.md)
-   - Understanding and using comparison operators in PowerShell
+2. [Arrays](part2/arrays/arrays.md)
+   - Understanding and using Arrays in PowerShell
 
 3. [Object-Oriented Programming](part2/objectoriented/index.md)
    - Introduction to object-oriented concepts in PowerShell
 
+3. [Get-Member](part2/get-member/getmember.md)
+   - Introduction to Get-Member cmdlet.
+
 4. [Get-Date](part2/getdate/getdate.md)
    - The DatimeTime Object. How to use Get-Date.
 
+5. [Flow Control](part2/flowcontrol/flowcontrol.md)
+   - Introduction to Flow Control in PowerShell.
 
+## PART 3: Creating Your Own Scripts
+
+1. [Creating a Function](part3/creatingyourownscripts/functions.md)
+   - How to create a function in PowerShell.
+
+2. [Creating a Script](part3/creatingyourownscripts/script.md)
+   - How to create a script in PowerShell.
 
 ## Getting Started
 
 To begin your journey in mastering PowerShell and creating time, start with Part 1 and work your way through each section. Each module contains practical examples and exercises to help reinforce your learning.
 
-## Support
-
-If you have any questions or need assistance, please don't hesitate to reach out to our support team or use the issues section of this repository.
-
-Happy PowerShelling!
-
----
