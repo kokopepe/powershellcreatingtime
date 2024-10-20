@@ -1,10 +1,11 @@
 ## AI Tools for Coding: Enhancing Developer Productivity
 
 - LLMs (Large Language Models) excel in programming contexts:
-  - Programming languages are "closed domains" with well-defined rules. LLMs can effectively learn and apply these rules
+
+- Programming languages are "closed domains" with well-defined rules. LLMs can effectively learn and apply these rules
 
 
-This would be a whole long discussion, and i would like jus to focus on these two tools: Copilot and Q.
+
 
 <div style="display: flex; justify-content: space-between;">
   <img src="intro/tools/images/copilot.png" alt="GitHub Copilot" style="width: 48%; height: auto;">

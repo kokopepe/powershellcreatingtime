@@ -4,7 +4,7 @@
 Get-Command + Get-Help. One to find the cmdlet, the second to find out how to use it.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/kokopepe/powershellcreatingtime/main/Get-Help/images/helpmeme.gif" alt="Get-Help in action">
+  <img src="https://raw.githubusercontent.com/kokopepe/powershellcreatingtime/main/part1/Get-Help/images/helpmeme.gif" alt="Get-Help in action">
 </p>
 
 
