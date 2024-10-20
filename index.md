@@ -11,6 +11,14 @@ This course is divided into two main parts:
 
 Each section is carefully crafted to build your skills progressively, from basic concepts to advanced techniques.
 
+## Introduction
+
+[The Future of IT in the Age of AI](intro/thefutureofit.md/futureofit.md)
+
+[Evaluating Some Tools](intro/tools/evaluatingsometools.md)
+
+
+
 ## PART 1: Understanding the Shell
 
 1. [PowerShell Versions](part1/PowershellVersions/index.md)

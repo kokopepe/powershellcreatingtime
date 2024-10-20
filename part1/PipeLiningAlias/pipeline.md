@@ -1,6 +1,12 @@
 # PowerShell Pipelining and Aliases
 
+
+
 ## Pipelining
+
+
+The pipeline in PowerShell is a feature of the PowerShell engine that allows you to connect two or more commands together. 
+It enables the output of one command to be used as the input for another, facilitating the flow of data between commands.
 
 Pipelining in PowerShell is like an assembly line in a factory. Each cmdlet in the pipeline is a workstation, and the data flows through these workstations, being processed at each step.
 
