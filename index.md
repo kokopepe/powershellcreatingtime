@@ -31,19 +31,22 @@ Each section is carefully crafted to build your skills progressively, from basic
 3. [Cmdlets 101](part1/Cmdlets101/index.md)
    - Advanced cmdlet usage and techniques.
 
-4. [Get-Help](part1/Get-Help/gethelp.md)
+4. [Modules](part1/modules/modules.md)
+   - Introduction to PowerShell modules.
+
+5. [Get-Help](part1/Get-Help/gethelp.md)
    - Learn how to get help on PowerShell cmdlets.
 
-5. [PipeLines](part1/PipeLiningAlias/pipeline.md)
+6. [PipeLines](part1/PipeLiningAlias/pipeline.md)
    - Master the powerful concept of pipelines in PowerShell.
 
-6. [The Every Day Use cmdlets](part1/TheParetoCmdlets/paretocmdlets.md)
+7. [The Every Day Use cmdlets](part1/TheParetoCmdlets/paretocmdlets.md)
    - How to use Select-Object, Where-Object and ForEach-Object
 
-7. [Calculated Properties](part1/CalculatedProperties/calculatedProperties.md)
+8. [Calculated Properties](part1/CalculatedProperties/calculatedProperties.md)
    - How to use calculated properties to create custom properties on the fly.
 
-8. [Registry Provider](part1/registryProvider/regproviders.md)
+9. [Registry Provider](part1/registryProvider/regproviders.md)
    - Become a command line ninja with registry providers.
 
 9. [Practice Exercises](part1/PracticeExercises/UserParameters/index.md)
@@ -65,11 +68,11 @@ Each section is carefully crafted to build your skills progressively, from basic
 3. [Get-Member](part2/get-member/getmember.md)
    - Introduction to Get-Member cmdlet.
 
-4. [Get-Date](part2/getdate/getdate.md)
-   - The DatimeTime Object. How to use Get-Date.
-
-5. [Flow Control](part2/flowcontrol/flowcontrol.md)
+4. [Flow Control](part2/flowcontrol/flowcontrol.md)
    - Introduction to Flow Control in PowerShell.
+
+5. [Get-Date](part2/getdate/getdate.md)
+   - The DatimeTime Object. How to use Get-Date.
 
 ## PART 3: Creating Your Own Scripts
 

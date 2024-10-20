@@ -8,6 +8,8 @@ Get-Command + Get-Help. One to find the cmdlet, the second to find out how to us
 </p>
 
 
+Get-Help is an essential tool in PowerShell, providing comprehensive documentation for cmdlets and functions.
+Mastering Get-Help allows you to quickly understand and utilize PowerShell's vast array of commands and features.
 
 ### Basic Usage
 
@@ -84,13 +86,12 @@ PowerShell cmdlets use various types of parameters to control their behavior. Le
 | Parameter Type | Description | Example |
 |----------------|-------------|---------|
 | Optional | Not required for the cmdlet to run | `-Verbose` |
-| Mandatory | Must be provided for the cmdlet to function | `-Path` in `Set-Location` |
+| Mandatory | Must be provided for the cmdlet to function | `-FilePath` in `Out-File` |
 | Named | Explicitly specified by their names | `-Name "Process1"` |
 | Positional | Can be used without specifying the parameter name | `Get-Process winlogon` |
 | Switched | Act as boolean flags | `-Force` |
 | Default Value | Have a pre-set value if not specified | `-ErrorAction` defaults to `Continue` |
 
-## Parameter Syntax
 
 
 
@@ -109,6 +110,10 @@ Get-ChildItem -Recurse -Filter *.ps1 | Select-Object name,length
 ```
 
 
+# Autocomplete
+The TAB key is your ally in PowerShell, offering powerful autocomplete functionality for commands and parameters.
+Leveraging TAB can significantly speed up your typing and help you discover available options as you work.
+
 
 
 ## Challenge 
@@ -121,12 +126,51 @@ Find out the answers to the following questions:
 3. Which parameter is mandatory for `Out-File`?
 4. Is there a parameter to specify the encoding of the output file? (Yes/No)
 5. What does the `-NoNewline` parameter do? (Brief explanation)
+6. List all switch parameters for this cmdlet.
 
-## Find out what parameters a cmdlet has
 
-Use the `Get-Help` cmdlet to examine the `Set-Location` cmdlet. 
+## Parameter Breakdown
 
-1. Which parameter is mandatory?
-2. List three optional parameters.
-3. Write a command using `Set-Location` with both a mandatory and an optional parameter.
-4. List  switch parameters for this cmdlet.
+1. **[-FilePath] <System.String>**
+   - Mandatory parameter (square brackets around the name indicate it can be omitted if used positionally)
+   - Accepts a string value specifying the path of the output file
+
+2. **[-Encoding] {ASCII | BigEndianUnicode | ...}**
+   - Optional parameter (entire parameter in square brackets)
+   - Accepts one of the listed encoding types
+   - Curly braces {} indicate a set of predefined values
+
+3. **[-Append]**
+   - Optional switch parameter
+   - When present, adds content to the end of an existing file
+
+4. **[-Force]**
+   - Optional switch parameter
+   - Overrides restrictions that prevent the command from succeeding
+
+5. **[-InputObject <System.Management.Automation.PSObject>]**
+   - Optional parameter
+   - Accepts input to be written to the file
+
+6. **[-NoClobber]**
+   - Optional switch parameter
+   - Prevents overwriting of an existing file
+
+7. **[-NoNewline]**
+   - Optional switch parameter
+   - Omits the newline character at the end of the output
+
+8. **[-Width <System.Int32>]**
+   - Optional parameter
+   - Accepts an integer specifying the width of the output
+
+9. **[-Confirm]**
+   - Optional switch parameter
+   - Prompts for confirmation before executing the command
+
+10. **[-WhatIf]**
+    - Optional switch parameter
+    - Shows what would happen if the command were to run
+
+11. **[<CommonParameters>]**
+    - Indicates that this cmdlet supports common parameters like `-Verbose`, `-Debug`, etc.

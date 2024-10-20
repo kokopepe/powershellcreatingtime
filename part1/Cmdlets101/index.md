@@ -72,19 +72,16 @@ Some common aliases include are well known to keep dos/linux experience:
 
 You can view all aliases using the `Get-Alias` cmdlet.
 
-### Quick Exercise:
+## Exercise 1: Alias
 
-Try to find out what `?` and `%` mean in PowerShell. These are aliases for commonly used cmdlets in pipelines.
+Try to find out what `?` and `%` mean in PowerShell. 
 
 Hint: Use `Get-Alias ?` and `Get-Alias %` to discover their meanings.
 
 While aliases are great for interactive use, it's generally recommended to use full cmdlet names in scripts for better readability and maintainability.
 
 
-In future lessons, we'll explore essential PowerShell discovery commands like Get-Help, Get-Command, and Get-Member. These will help you understand cmdlet parameters, find relevant commands, and explore object properties, enhancing your ability to construct effective PowerShell commands and pipelines.
-
-
-## Exercise 1: Finding Firewall-related Cmdlets
+## Exercise 2: Finding Firewall-related Cmdlets
 
 Imagine we need to find something related to Firewalls. Let's use `Get-Command` to help us:
 
