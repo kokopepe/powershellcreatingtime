@@ -71,3 +71,34 @@ $age = 30
 $age.GetType()
 
 
+# PSCustomObject in PowerShell
+
+PSCustomObject is a powerful and flexible way to create custom objects in PowerShell. It provides a simple and efficient method for creating structured data that can be easily manipulated and accessed.
+
+## How to Use PSCustomObject
+
+To create a PSCustomObject, you can use the following syntax:
+
+$myObject = [PSCustomObject]@{
+    Name = "John Doe"
+    Age = 30
+    City = "New York"
+}
+
+You can then access the properties of the object using dot notation:
+
+$myObject.Name  # Output: John Doe
+$myObject.Age   # Output: 30
+
+## Advantages of PSCustomObject
+
+
+
+1. **Pipeline compatibility**: PSCustomObjects work seamlessly with PowerShell's pipeline operations.
+
+2. **Flexibility**: You can easily add, remove, or modify properties of a PSCustomObject.
+
+3. **Easy conversion**: You can easily convert PSCustomObjects to and from other data formats like JSON or CSV.
+
+Compared to other object types in PowerShell, PSCustomObject offers a balance of simplicity, flexibility, and performance, making it an excellent choice for many scripting scenarios.
+

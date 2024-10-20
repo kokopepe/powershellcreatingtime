@@ -14,11 +14,9 @@ Before we can effectively use PowerShell, we need to understand how to query our
 
 `Select-Object` is one of the most frequently used cmdlets in PowerShell. It allows you to choose specific properties (or columns) of objects that you want to see in the output.
 
-### Key features of Select-Object:
 
-- Can select an arbitrary subset of output rows using `-First` and `-Last`
-- Ability to limit the properties returned from a command using wildcards
-- Can create custom or calculated properties
+- Ability to limit the properties returned from a command. 
+- Can create custom or calculated properties (We will alk about this)
 
 ### Examples:
 ````powershell
@@ -26,8 +24,6 @@ Limit the properties returned
 Get-Process | Select-Object -Property Name, Id
 List everything but a few properties
 Get-Process | Select-Object -Property -Exclude "Memory"
-Get the first few objects
-Get-ChildItem C:\ | Select-Object -First 5
 Get the last few objects
 Get-ChildItem C:\ | Select-Object -Last 3
 ````
@@ -36,10 +32,8 @@ Get-ChildItem C:\ | Select-Object -Last 3
 
 `Where-Object` is used to filter objects out of the pipeline based on specified criteria.
 
-### Key features of Where-Object:
 
 - Removes or filters objects based on conditions you specify
-- Works well in combination with `Select-Object` for powerful data manipulation
 
 ### Example:
 ````powershell
@@ -51,30 +45,20 @@ Get-Process | Where-Object {$.WS -gt 100MB}
 
 `ForEach-Object` allows you to perform operations on each item in a collection of input objects.
 
-### Key features of ForEach-Object:
-
 - Executes a script block on each item in the pipeline
 - Can be used for complex operations or simple property access
-- Often abbreviated as `%` in PowerShell scripts
+- Often used with the Alias: `%`
 
 ### Examples:
 Using the % alias
 ````powershell
-1..5 | % { $PSItem * 2 }
+Get-Process | % { Write-Host $_.Name }
+````
+Convert a list of strings to uppercase:
+````powershell
+"apple", "banana", "cherry" | % { $_.ToUpper() }
 ````
 
-
-## Exercises
-
-To practice these concepts, try the following exercises:
-
-1. Get all Windows processes whose name starts with letter "s"
-2. List processes whose name is svchost and PM (Private Memory) is more than 100MB
-3. Get Process Name, Process ID and HandleCount where PM is more than 100MB and CPU more than 1000s
-4. Export the results of (3) to html and CSV format
-5. Use `ForEach-Object` to display the name and size of each file in the current directory, but only if the file is larger than 1MB
-
-Remember, mastering these cmdlets will greatly enhance your ability to manipulate, analyze, and process data in PowerShell!
 
 # PowerShell Comparison Operators
 
@@ -101,7 +85,7 @@ PowerShell provides various comparison operators that can be used in conditional
   Get-Process |  Where-Object { $_.Name -match '^S' }
   ```
 
-These operators are used extensively in PowerShell scripting to filter data or compare values when processing collections of objects.
+
 
 
 ## Advanced Filtering with Logical Operators
@@ -121,4 +105,15 @@ Get-Service | Where-Object { $_.Status -eq "Stopped" -or $_.DisplayName -like "*
 ```
 
 
-These examples demonstrate how to use `-and` and `-or` operators to create more sophisticated filters. You can combine multiple conditions to pinpoint exactly the processes you're interested in analyzing. By mastering these logical operators, you can create highly specific queries that allow you to extract precisely the information you need from your system.
+These examples demonstrate how to use `-and` and `-or` operators to create more sophisticated filters. You can combine multiple conditions to pinpoint exactly the processes you're interested in analyzing. 
+
+
+## Exercises
+
+To practice these concepts, try the following exercises:
+
+1. Get all Windows processes whose name starts with letter "s"
+2. List processes whose name is svchost and PM (Private Memory) is more than 100MB
+3. Export the results of (3) to html and CSV format
+4. Use `ForEach-Object` to display the name and size of each file in the current directory, but only if the file is larger than 1MB
+

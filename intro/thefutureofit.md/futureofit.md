@@ -1,5 +1,11 @@
 # The Future of IT in the Age of AI
 
+
+<p align="center">
+  <img src="intro/thefutureofit.md/images/futureia.png" alt="Future of AI" width="800">
+</p>
+
+
 ## 1. Introduction: The AI Paradigm Shift
 - **AI is rapidly advancing** and performing tasks traditionally reserved for IT professionals, like coding and automation.
 

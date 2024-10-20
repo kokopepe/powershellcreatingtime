@@ -151,8 +151,6 @@ Write-Output "Correct! The number was $targetNumber."
 
 Note: `ForEach-Object` is a cmdlet used in the pipeline, different from the `foreach` statement:
 
-1..5 | ForEach-Object { Write-Output "Processing item $_" }
-
 ### Exercise: File Size Calculator
 Use `ForEach-Object` in a pipeline to calculate the total size of all .txt files in the current directory.
 
@@ -166,55 +164,5 @@ $totalSize = Get-ChildItem -Filter *.txt | ForEach-Object {
 
 Write-Output "Total size of .txt files: $totalSize bytes"
 ````
-
-
 </details>
 
-## Additional Exercises
-
-1. Write a script that checks if a number is even or odd using an `If` statement.
-2. Create an array of five colors. Use a `ForEach` loop to output each color.
-3. Use a `For` loop to count from 1 to 10, outputting only even numbers.
-4. Write a `Do-While` loop that asks the user for input and continues until they type "exit".
-5. Create a pipeline that generates numbers 1 to 10 and uses `ForEach-Object` to output the square of each number.
-
-<details>
-<summary>Solutions</summary>
-
-```powershell
-# 1. Even or Odd
-$number = 7
-if ($number % 2 -eq 0) {
-    Write-Output "$number is even"
-}
-else {
-    Write-Output "$number is odd"
-}
-
-# 2. Color Array
-$colors = @("Red", "Blue", "Green", "Yellow", "Purple")
-foreach ($color in $colors) {
-    Write-Output $color
-}
-
-# 3. Even Numbers
-for ($i = 1; $i -le 10; $i++) {
-    if ($i % 2 -eq 0) {
-        Write-Output $i
-    }
-}
-
-# 4. User Input Loop
-do {
-    $input = Read-Host "Enter a command (type 'exit' to quit)"
-    if ($input -ne "exit") {
-        Write-Output "You entered: $input"
-    }
-} while ($input -ne "exit")
-
-# 5. Square Numbers
-1..10 | ForEach-Object { Write-Output "The square of $_ is $($_ * $_)" }
-````
-
-
-</details>
