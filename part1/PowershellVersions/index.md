@@ -61,6 +61,53 @@ Next, we’ll download and install PowerShell 7.x to use the latest cross-platfo
 Powershell 7.x is a cross-platform version of PowerShell that is compatible with Windows, macOS, and Linux. It is the one currently been developed and maintained by Microsoft.
 
 
+
+## PowerShell Execution Policy
+
+PowerShell execution policy is a safety feature that controls the conditions under which PowerShell loads configuration files and runs scripts. It's important to understand this concept when working with PowerShell scripts.
+
+### Key Points:
+
+1. **Purpose**: To prevent the unintentional execution of malicious scripts.
+2. **Scope**: Can be set for the local computer, current user, or a specific PowerShell session.
+3. **Default Settings**:
+   - Windows Server (2016, 2019, 2022): RemoteSigned
+   - Windows 10 and 11: Restricted
+
+### Checking Execution Policy:
+
+To check your current execution policy, run:
+
+```powershell
+Get-ExecutionPolicy
+```
+
+### Important Note:
+
+While execution policy helps prevent unintentional script execution, it's not a security boundary. Determined users can bypass it. Always exercise caution when running scripts from untrusted sources.
+
+### Execution Policy Scopes and Meanings:
+
+| Scope | Description |
+|-------|-------------|
+| MachinePolicy | Set by Group Policy for all users of the computer |
+| UserPolicy | Set by Group Policy for the current user of the computer |
+| Process | Affects only the current PowerShell session |
+| CurrentUser | Set directly for the current user, typically via PowerShell commands |
+| LocalMachine | Default scope that affects all users on the current computer |
+
+### Execution Policy Settings:
+
+| Policy | Description |
+|--------|-------------|
+| Restricted | Doesn't load configuration files or run scripts |
+| AllSigned | Requires all scripts and configuration files to be signed by a trusted publisher |
+| RemoteSigned | Requires scripts downloaded from the internet to be signed by a trusted publisher |
+| Unrestricted | Loads all configuration files and runs all scripts |
+| Bypass | Nothing is blocked and there are no warnings or prompts |
+| Undefined | Removes the currently assigned execution policy from the current scope |
+
+
 ## Backward Compatibility and Version-Specific Features
 
 PowerShell maintains very good  backward compatibility across versions. 

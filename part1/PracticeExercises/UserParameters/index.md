@@ -45,8 +45,3 @@ For each exercise, provide:
 2. The output of your command(s)
 3. A brief explanation of how your command works
 
-## Bonus Challenge
-
-Create a single PowerShell script that performs all five exercises and outputs the results in a structured format (e.g., as a custom object or formatted table).
-
-Good luck!

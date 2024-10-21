@@ -108,6 +108,32 @@ Get-Service | Where-Object { $_.Status -eq "Stopped" -or $_.DisplayName -like "*
 These examples demonstrate how to use `-and` and `-or` operators to create more sophisticated filters. You can combine multiple conditions to pinpoint exactly the processes you're interested in analyzing. 
 
 
+## Built-in Remote Capabilities
+
+PowerShell offers various methods to execute commands on remote computers. One of the most common tasks in PowerShell is to run commands against remote systems, and this can often be done using built-in remote capabilities.
+
+
+To discover which cmdlets have a `ComputerName` parameter, you can use the following command:
+
+```powershell
+Get-Command -ParameterName ComputerName
+````
+Or check the status of a service on multiple remote computers:
+
+```powershell
+Get-Service -Name "Spooler" -ComputerName Server01, Server02, Server03
+````
+
+```powershell
+get-adcomputer | foreach-object {
+    get-service -name "Spooler" -computername $_.name
+}
+````
+
+```powershell
+Get-Service -Name "Spooler" -ComputerName Server01, Server02, Server03
+````
+
 ## Exercises
 
 To practice these concepts, try the following exercises:

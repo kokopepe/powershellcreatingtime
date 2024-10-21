@@ -62,17 +62,11 @@ PowerShell repositories are centralized storage locations for PowerShell modules
    - Use `Get-PSRepository` to list all registered repositories.
    - This shows you where PowerShell looks for modules when you use commands like `Install-Module`.
    - By default, repositories like PSGallery are not trusted, and PowerShell will ask for confirmation before installing modules.
-   - This is because anyone can publish modules to these repositories. Always research the module's author, check its documentation, and review its code if possible before installation, especially in production environments.
-
-3. Adding Custom Repositories:
-   - Organizations often set up private repositories for internal modules.
-   - Use `Register-PSRepository` to add new repositories to your PowerShell environment.
-
-4. Using Repositories:   
+   
+3. Using Repositories:   
 - When you use `Find-Module` or `Install-Module`, PowerShell searches these repositories.
    - You can specify a repository using the `-Repository` parameter in these commands.
 
-Understanding PSRepositories helps you manage where your PowerShell modules come from and ensures you're using trusted sources for your scripts and modules.
 
 3. **Autoloading**:  This means you don't always need to explicitly import a module before using its commands.
 

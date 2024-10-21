@@ -1,5 +1,10 @@
 # Flow Control in PowerShell
 
+## Looping
+
+One of the great things about PowerShell is, once you figure out how to do something for one item, it's almost as easy to do the same task for hundreds of items. Simply loop through the items using one of the many different types of loops in PowerShell.
+
+
 PowerShell offers several flow control structures to manage the execution of your scripts. Here's a quick overview:
 
 | Structure | Purpose | Basic Syntax |
