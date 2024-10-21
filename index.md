@@ -14,6 +14,8 @@ Each section is carefully crafted to build your skills progressively, from basic
 
 ## Introduction
 
+[What is PowerShell?](intro/whatispowershell/whatispowershell.md)
+
 [The Future of IT in the Age of AI](intro/thefutureofit.md/futureofit.md)
 
 [Evaluating Some Tools](intro/tools/evaluatingsometools.md)
@@ -81,8 +83,4 @@ Each section is carefully crafted to build your skills progressively, from basic
 
 2. [Creating a Script](part3/creatingyourownscripts/script.md)
    - How to create a script in PowerShell.
-
-## Getting Started
-
-To begin your journey in mastering PowerShell and creating time, start with Part 1 and work your way through each section. Each module contains practical examples and exercises to help reinforce your learning.
 
