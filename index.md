@@ -22,7 +22,7 @@ Each section is carefully crafted to build your skills progressively, from basic
 
 
 
-## PART 1: Understanding the Shell
+## Part 1: Understanding the Shell
 
 1. [PowerShell Versions](part1/PowershellVersions/index.md)
    - Learn about different PowerShell versions and how to set up your environment.
@@ -54,7 +54,7 @@ Each section is carefully crafted to build your skills progressively, from basic
 9. [Practice Exercises](part1/PracticeExercises/UserParameters/index.md)
    - Hands-on exercises to reinforce your learning.
 
-## PART 2: Learning the Language
+## Part 2: Learning the Language
 
 1. [PowerShell Variables and Data Types](part2/variableslogic101/variablelogic.md)
    - Introduction to Variables
@@ -76,7 +76,7 @@ Each section is carefully crafted to build your skills progressively, from basic
 5. [Get-Date](part2/getdate/getdate.md)
    - The DatimeTime Object. How to use Get-Date.
 
-## PART 3: Creating Your Own Scripts
+## Part 3: Creating Your Own Scripts
 
 1. [Creating a Function](part3/creatingyourownscripts/functions.md)
    - How to create a function in PowerShell.
