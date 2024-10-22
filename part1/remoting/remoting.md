@@ -57,13 +57,19 @@ Invoke-Command -Session $session -ScriptBlock { Get-Service }
 
 PowerShell remoting is a essential feature for efficient system administration and automation across networks. Understanding its capabilities and limitations is crucial for effective use in complex environments.
 
+# Exercise
+
+I have created a mahcine runningon azure
+try to remote into it using PowerShell remoting.
+and figure out the information about the systemt this machine is running on.
+
+
 
 # Introduction to REST APIs
 
-
 Understanding REST APIs and JSON is crucial.
 
-Most  web services communicate via REST API queries, and this is the primary method for exposing your applications publicly.
+Most web services communicate via REST API queries, and this is the primary method for exposing your applications publicly.
 
 ### What is a REST API?
 
@@ -74,7 +80,10 @@ Key points:
 - Stateless: each request contains all necessary information
 - Typically returns data in JSON format
 
-### Invoke-RestMethod Basics
+### PowerShell and REST APIs
+
+PowerShell is an excellent tool for interacting with REST APIs. 
+It provides the `Invoke-RestMethod` cmdlet, which makes it easy to send HTTP/HTTPS requests to RESTful web services and work with the response data.
 
 `Invoke-RestMethod` allows you to:
 - Send requests to REST APIs
@@ -109,11 +118,6 @@ JSON (JavaScript Object Notation) is the most common data format for REST APIs b
 Understanding REST APIs and JSON is crucial in today's interconnected digital world, especially for developers and IT professionals working with diverse systems and services.
 
 Now, let's see how PowerShell can interact with REST APIs...
-
-## PowerShell and REST APIs
-
-PowerShell is an excellent tool for interacting with REST APIs. 
-It provides the `Invoke-RestMethod` cmdlet, which makes it easy to send HTTP/HTTPS requests to RESTful web services and work with the response data.
 
 ### Example 1: GET Request to a Public API
 
