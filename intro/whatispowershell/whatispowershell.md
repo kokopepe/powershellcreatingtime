@@ -4,7 +4,7 @@ PowerShell is a cross-platform task automation solution made up of a command-lin
 
 It allows administrators and developers to automate repetitive tasks, manage system configurations, and perform complex administrative actions across different operating systems.
 
- With its object-oriented nature, it enables users to manipulate data objects directly, making it a powerful tool for both IT professionals and developers.
+With its object-oriented nature, it enables users to manipulate data objects directly, making it a powerful tool for both IT professionals and developers.
 
 
 ## 1. PowerShell as a Shell

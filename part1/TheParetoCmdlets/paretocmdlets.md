@@ -2,6 +2,10 @@
 
 PowerShell is a powerful scripting language and command-line shell that allows you to interact with your system and manage various aspects of it. Two essential cmdlets in PowerShell are `Select-Object` and `Where-Object`. These cmdlets help you filter and manipulate data effectively.
 
+<p align="center">
+  <img src="/part1/TheParetoCmdlets/images/productionline.png" alt="Production Line" width="600">
+</p>
+
 ## Listening to Your Environment
 
 Before we can effectively use PowerShell, we need to understand how to query our environment. This involves:
@@ -132,7 +136,49 @@ get-adcomputer | foreach-object {
 
 ```powershell
 Get-Service -Name "Spooler" -ComputerName Server01, Server02, Server03
-````
+```
+
+## Output and Conversion Cmdlets
+
+PowerShell provides several cmdlets for outputting and converting data. Here are four commonly used ones:
+
+### Out-File
+
+`Out-File` sends output to a file, allowing you to save command results for later use or analysis.
+
+```powershell
+Get-Process | Out-File -FilePath "C:\processes.txt"
+```
+Key features: Can append to existing files (-Append), set encoding (-Encoding), and force overwrite of read-only files (-Force).
+
+### Export-Csv
+
+`Export-Csv` exports objects to a comma-separated value (CSV) file, which is great for data that needs to be imported into spreadsheets or databases.
+
+```powershell
+Get-Process | Export-Csv -Path "C:\processes.csv" -NoTypeInformation
+```
+Key features: Removes type information header (-NoTypeInformation), specifies delimiter (-Delimiter), and supports appending (-Append).
+
+### ConvertTo-Json
+
+`ConvertTo-Json` converts objects to a JSON-formatted string, which is useful for data interchange or when working with web services.
+
+```powershell
+Get-Process | Select-Object Name, Id, CPU | ConvertTo-Json | Out-File "C:\processes.json"
+```
+Key features: Controls depth of conversion (-Depth), supports compression of output (-Compress), and handles circular references (-EscapeHandling).
+
+### ConvertTo-Html
+
+`ConvertTo-Html` converts objects into HTML format, which is useful for creating reports or web-based output.
+
+```powershell
+Get-Process | Select-Object Name, Id, CPU | ConvertTo-Html | Out-File "C:\processes.html"
+```
+Key features: Customizes HTML output with CSS (-CssUri), adds custom headers and footers (-Head, -Body, -Title), and creates tables or lists (-As Table/List).
+
+These cmdlets are powerful tools for exporting and converting data in PowerShell, allowing you to interface with various file formats and systems.
 
 ## Exercises
 

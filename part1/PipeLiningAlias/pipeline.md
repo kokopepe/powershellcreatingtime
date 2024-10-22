@@ -31,7 +31,7 @@ For example, in the command:
 Get-Process | Where-Object { $_.CPU -gt 10 } | Select-Object Name, CPU
 ```
 
-![Assembly Line Analogy](images/image.png)
+![Production Line](images/productionline.png){: .center-image }
 
 
 PowerShell does the following:

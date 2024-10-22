@@ -55,8 +55,6 @@ Get-Help Get-Process -Examples
    Show-Command Get-Process
    ```
 
-
-
 ## Understanding Parameters in Help
 
 When you use `Get-Help` on a cmdlet, you'll see a list of parameters. Here's how to interpret them:
@@ -75,8 +73,6 @@ Example:
 Get-Help Get-Process -Parameter Name
 ```
 
-
-
 # Understanding PowerShell Parameters
 
 PowerShell cmdlets use various types of parameters to control their behavior. Let's break down the key concepts:
@@ -91,8 +87,6 @@ PowerShell cmdlets use various types of parameters to control their behavior. Le
 | Positional | Can be used without specifying the parameter name | `Get-Process winlogon` |
 | Switched | Act as boolean flags | `-Force` |
 | Default Value | Have a pre-set value if not specified | `-ErrorAction` defaults to `Continue` |
-
-
 
 
 ```powershell
@@ -111,10 +105,25 @@ Get-ChildItem -Recurse -Filter *.ps1 | Select-Object name,length
 
 
 # Autocomplete
-The TAB key is your ally in PowerShell, offering powerful autocomplete functionality for commands and parameters.
-Leveraging TAB can significantly speed up your typing and help you discover available options as you work.
+
+The TAB key is your ally in PowerShell, offering powerful autocomplete functionality for commands and parameters. Leveraging TAB can significantly speed up your typing and help you discover available options as you work.
+
+PowerShell provides several types of autocomplete:
+
+1. **Command completion**: When you start typing a command name, PowerShell completes the rest of the name and shows all commands that contain the typed text anywhere in its name.
+
+2. **Parameter completion**: After you have typed a command, entering a hyphen (-) enables parameter completion. PowerShell lists all parameters that match the typed text anywhere in its name.
+
+3. **Argument completion**: After typing a parameter, PowerShell often can suggest and complete available argument values, depending on the command and parameter.
+
+4. **Variable completion**: After typing $, PowerShell completes variable names and providers (drives).
+
+5. **Member completion**: After a dot (.), PowerShell completes object members such as methods and properties.
+
+6. **Path completion**: When typing a file or directory path, PowerShell can autocomplete folder and file names, making navigation through the file system, registry, psdrivers providers (certificates, AD, SQL ...)
 
 
+Using these autocomplete features can greatly enhance your productivity and help you discover PowerShell's capabilities as you work.
 
 ## Challenge 
 
