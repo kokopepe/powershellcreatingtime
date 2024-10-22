@@ -60,3 +60,43 @@ Get-ChildItem | Get-Member
 ```
 
 This explanation covers the basics of Get-Member, provides a relatable analogy, includes a practical example, and suggests an exercise for students. It should give your students a solid understanding of what Get-Member is and how it can be used in PowerShell.
+
+
+#  Remoting and Objects: Local vs Remote Execution
+
+When working with PowerShell remoting, it's important to understand the difference between objects returned by local cmdlets and those returned when using `Invoke-Command` for remote execution:
+
+1. **Local Cmdlet Execution:**
+   - Returns live objects
+   - Full access to methods and properties
+   - Objects can be manipulated directly
+
+2. **Remote Execution with Invoke-Command:**
+   - Returns deserialized objects
+   - Limited access to properties; most methods are not available
+   - Objects are snapshots of the remote state at the time of execution
+
+### Example:
+
+```powershell
+# Local execution
+$localService = Get-Service -Name W32time
+$localService.GetType().FullName
+# Output: System.ServiceProcess.ServiceController
+
+# Remote execution
+$remoteService = Invoke-Command -ComputerName server01 { Get-Service -Name W32time }
+$remoteService.GetType().FullName
+# Output: Deserialized.System.ServiceProcess.ServiceController
+```
+
+In the remote execution scenario, you can't directly call methods on the returned object. For instance, `$remoteService.Stop()` would fail. Instead, you need to perform actions within the remote session:
+
+```powershell
+Invoke-Command -ComputerName server01 { (Get-Service -Name W32time).Stop() }
+```
+
+Understanding this difference is crucial when working with remote systems, as it affects how you interact with the returned data and structure your remote commands.
+
+
+

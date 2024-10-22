@@ -5,12 +5,13 @@ Welcome to the PowerShell Training course focused on Creating Time. This compreh
 
 ## Course Overview
 
-This course is divided into two main parts:
+Two main concepts we want to teach:
 
-1. Understanding the Shell
-2. Learning the Language
+1. Understanding the Shell. The Pipeline.
+2. Learning the Language. Understandig Objects Oriented.
 
-Each section is carefully crafted to build your skills progressively, from basic concepts to advanced techniques.
+And as a summary project we will create a script that will automate a task.
+
 
 ## Introduction
 
@@ -51,7 +52,11 @@ Each section is carefully crafted to build your skills progressively, from basic
 9. [Registry Provider](part1/registryProvider/regproviders.md)
    - Become a command line ninja with registry providers.
 
-9. [Practice Exercises](part1/PracticeExercises/UserParameters/index.md)
+10. [Remoting and Rest Methods](part1/remoting/remoting.md)
+
+    - How to use remoting to connect to remote computers.
+
+11. [Practice Exercises](part1/PracticeExercises/UserParameters/index.md)
    - Hands-on exercises to reinforce your learning.
 
 ## Part 2: Learning the Language
@@ -81,6 +86,6 @@ Each section is carefully crafted to build your skills progressively, from basic
 1. [Creating a Function](part3/creatingyourownscripts/functions.md)
    - How to create a function in PowerShell.
 
-2. [Creating a Script](part3/creatingyourownscripts/script.md)
+2. [Creating a Script](part3/creatingyourownscripts/howtoscript.md)
    - How to create a script in PowerShell.
 

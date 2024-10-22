@@ -6,6 +6,11 @@ It allows administrators and developers to automate repetitive tasks, manage sys
 
 With its object-oriented nature, it enables users to manipulate data objects directly, making it a powerful tool for both IT professionals and developers.
 
+<div style="display: flex; justify-content: space-between;">
+    <img src="intro/whatispowershell/images/shell.png" alt="Shell" width="32%">
+    <img src="intro/whatispowershell/images/code.png" alt="Code" width="32%">
+    <img src="intro/whatispowershell/images/shellcode.png" alt="Shell and Code" width="32%">
+</div>
 
 ## 1. PowerShell as a Shell
 
