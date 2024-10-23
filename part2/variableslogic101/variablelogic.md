@@ -73,6 +73,11 @@ $age.GetType()
 
 # PSCustomObject in PowerShell
 
+<p align="center">
+  <img src="part2/variableslogic101/images/swiss.png" alt="Future of AI" width="400">
+</p>
+
+
 PSCustomObject is a powerful and flexible way to create custom objects in PowerShell. It provides a simple and efficient method for creating structured data that can be easily manipulated and accessed.
 
 ## How to Use PSCustomObject
