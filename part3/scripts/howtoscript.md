@@ -96,6 +96,31 @@ function Get-SystemReport {
 Get-SystemReport -IncludeDiskInfo
 ```
 
+## 6. Error Handling
+
+PowerShell provides a error handling mechanism using Try, Catch, and Finally blocks. 
+This allows you to  handle exceptions and ensure proper resource cleanup.
+
+```powershell
+try {
+    # Code that might cause an error
+    $result = 10 / 0  # This will cause a division by zero error
+}
+catch {
+    # Code to handle the error
+    Write-Error "An error occurred: $_"
+}
+finally {
+    # Code that always runs, whether there was an error or not
+    Write-Output "This always executes"
+}
+```
+
+- The `try` block contains code that might cause an error.
+- The `catch` block handles any errors that occur in the `try` block.
+- The `finally` block contains code that always runs, regardless of whether an error occurred.
+
+
 ## 6. Final Script
 
 Here's our complete script that brings everything together:
@@ -224,3 +249,109 @@ This script demonstrates the progression from basic cmdlets to advanced function
 
 
 
+
+## 7. Fun with Speech Synthesis: Building Complexity
+
+Let's explore PowerShell's speech synthesis capabilities, starting simple and gradually adding complexity.
+
+### 7.1 Basic Speech Output
+
+```powershell
+function Speak-Simple {
+    $voice = New-Object -TypeName System.Speech.Synthesis.SpeechSynthesizer
+    $voice.Speak("Hello, PowerShell world!")
+}
+
+Speak-Simple
+```
+
+### 7.2 Adding a Parameter
+
+```powershell
+function Speak-WithParam {
+    param(
+        [string]$Message
+    )
+    $voice = New-Object -TypeName System.Speech.Synthesis.SpeechSynthesizer
+    $voice.Speak($Message)
+}
+
+Speak-WithParam -Message "PowerShell is awesome!"
+```
+
+### 7.3 Multiple Parameters and Default Values
+
+```powershell
+function Speak-MultiParam {
+    param(
+        [string]$Message,
+        [int]$Volume = 100
+    )
+    $voice = New-Object -TypeName System.Speech.Synthesis.SpeechSynthesizer
+    $voice.Volume = $Volume
+    $voice.Speak($Message)
+}
+
+Speak-MultiParam -Message "Can you hear me?" -Volume 75
+```
+
+### 7.4 Parameter Validation
+
+```powershell
+function Speak-Validated {
+    param(
+        [Parameter(Mandatory=$true)]
+        [ValidateNotNullOrEmpty()]
+        [string]$Message,
+
+        [ValidateRange(0,100)]
+        [int]$Volume = 100
+    )
+    $voice = New-Object -TypeName System.Speech.Synthesis.SpeechSynthesizer
+    $voice.Volume = $Volume
+    $voice.Speak($Message)
+}
+
+Speak-Validated -Message "This message is required!" -Volume 50
+```
+
+### 7.5 Advanced Function with Pipeline Support
+
+```powershell
+function Speak-Advanced {
+    [CmdletBinding()]
+    param(
+        [Parameter(Mandatory=$true, ValueFromPipeline=$true)]
+        [ValidateNotNullOrEmpty()]
+        [string]$Message,
+
+        [ValidateSet("Male", "Female")]
+        [string]$VoiceGender = "Female",
+
+        [ValidateRange(0,100)]
+        [int]$Volume = 100
+    )
+    
+    process {
+        $voice = New-Object -TypeName System.Speech.Synthesis.SpeechSynthesizer
+        $voiceName = $voice.GetInstalledVoices().VoiceInfo | 
+                     Where-Object { $_.Gender -eq $VoiceGender } | 
+                     Select-Object -ExpandProperty Name -First 1
+        
+        $voice.SelectVoice($voiceName)
+        $voice.Volume = $Volume
+        $voice.Speak($Message)
+    }
+}
+
+"PowerShell is fun!", "Let's learn more!" | Speak-Advanced -VoiceGender Male -Volume 75
+```
+
+This progression demonstrates:
+1. Basic function creation
+2. Adding parameters
+3. Using default values
+4. Implementing parameter validation
+5. Creating an advanced function with pipeline support
+
+Each step builds on the previous, showcasing how to gradually increase function complexity and capability in PowerShell.
