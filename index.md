@@ -56,6 +56,9 @@ And as a summary project we will create a script that will automate a task.
 
     - How to use remoting to connect to remote computers.
 
+11. [Operators](part1/operators/powershell_operators.md)
+
+
 11. [Practice Exercises](part1/PracticeExercises/UserParameters/index.md)
    - Hands-on exercises to reinforce your learning.
 
