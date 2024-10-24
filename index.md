@@ -59,7 +59,7 @@ And as a summary project we will create a script that will automate a task.
 11. [Operators](part1/operators/powershell_operators.md)
 
 
-11. [Practice Exercises](part1/PracticeExercises/UserParameters/index.md)
+12. [Practice Exercises](part1/PracticeExercises/UserParameters/index.md)
    - Hands-on exercises to reinforce your learning.
 
 ## Part 2: Learning the Language
@@ -86,9 +86,9 @@ And as a summary project we will create a script that will automate a task.
 
 ## Part 3: Creating Your Own Scripts
 
-1. [Creating a Function](part3/creatingyourownscripts/functions.md)
+1. [Creating a Function](part3/functions/functions.md)
    - How to create a function in PowerShell.
 
-2. [Creating a Script](part3/creatingyourownscripts/howtoscript.md)
+2. [Creating a Script](part3/howtoscript/howtoscript.md)
    - How to create a script in PowerShell.
 
