@@ -89,6 +89,6 @@ And as a summary project we will create a script that will automate a task.
 1. [Creating a Function](part3/functions/functions.md)
    - How to create a function in PowerShell.
 
-2. [Creating a Script](part3/howtoscript/howtoscript.md)
+2. [Creating a Script](part3/scripts/howtoscript.md)
    - How to create a script in PowerShell.
 
