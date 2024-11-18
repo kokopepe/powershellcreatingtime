@@ -36,3 +36,10 @@ AI tools make the learning curve smoother by suggesting code and troubleshooting
      - Helps with code generation, debugging, and AWS-specific tasks
      - Provides explanations and best practices.
 
+#   Codeium:
+     - Free AI coding assistant.
+     - Features advanced code completion and generation
+     - Includes code refactoring and transformation capabilities
+     - Available for multiple IDEs including VS Code, JetBrains, and Vim
+
+
