@@ -13,38 +13,38 @@ Let's see how we can use them.
 
 Get-Command is one of the most powerful tools for discovering PowerShell capabilities. Here are key ways to use it:
 
-# List all available commands
+#### List all available commands
 ```powershell
 Get-Command -All
 ```
 
-# List commands with specific verbs
+#### List commands with specific verbs
 ```powershell
 Get-Command -Verb Get
 Get-Command -Verb Set
 ```
 
-# List commands with specific nouns
+#### List commands with specific nouns
 ```powershell
 Get-Command -Noun Process
 Get-Command -Noun Item
 Get-Command -Noun Service
 ```
 
-# Use wildcards for flexible searching
+#### Use wildcards for flexible searching
 ```powershell
 Get-Command *process*
 Get-Command Get-*
 Get-Command *service*
 ```
 
-# List commands from specific modules
+#### List commands from specific modules
 ```powershell
 Get-Command -Module Microsoft.PowerShell.Security
 Get-Command -Module PSReadLine
 ```
 
-# Find commands across multiple modules
+#### Find commands across multiple modules
 ```powershell
 Get-Command -Module Microsoft.PowerShell.*, CimCmdlets
 ```

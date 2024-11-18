@@ -15,6 +15,8 @@ And as a summary project we will create a script that will automate a task.
 
 ## Introduction
 
+[About the Course](intro/aboutcourse/about.md)
+
 [What is PowerShell?](intro/whatispowershell/whatispowershell.md)
 
 [The Future of IT in the Age of AI](intro/thefutureofit.md/futureofit.md)
@@ -53,11 +55,10 @@ And as a summary project we will create a script that will automate a task.
    - Become a command line ninja with registry providers.
 
 10. [Remoting and Rest Methods](part1/remoting/remoting.md)
-
-    - How to use remoting to connect to remote computers.
+  - How to use remoting to connect to remote computers.
 
 11. [Operators](part1/operators/powershell_operators.md)
-
+    - Learn all about PowerShell operators.
 
 12. [Practice Exercises](part1/PracticeExercises/UserParameters/index.md)
    - Hands-on exercises to reinforce your learning.
@@ -72,7 +73,7 @@ And as a summary project we will create a script that will automate a task.
 2. [Arrays](part2/arrays/arrays.md)
    - Understanding and using Arrays in PowerShell
 
-3. [Object-Oriented Programming](part2/objectoriented/index.md)
+3. [Object-Oriented Programming](part2/objectoriented/objectoriented.md)
    - Introduction to object-oriented concepts in PowerShell
 
 3. [Get-Member](part2/get-member/getmember.md)

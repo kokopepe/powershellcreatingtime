@@ -14,9 +14,7 @@ To understand object-oriented concepts in PowerShell, let's consider two example
 
 
 | Example Car                | Example PowerShell Service        |
-|----------------------------|-----------------------------------|
 | Property | Example Value   | Property  | Example Value         |
-|----------|-----------------|-----------|------------------------|
 | Make     | Tesla          | Name      | wuauserv (Windows Update) |
 | Model    | Model S         | Status    | Running, Stopped      |
 | Year     | 2024            | StartType | Automatic, Manual     |
@@ -25,9 +23,7 @@ To understand object-oriented concepts in PowerShell, let's consider two example
    Methods are actions that an object can perform or that can be performed on the object.
 
 | Example Car                | Example PowerShell Service        |
-|----------------------------|-----------------------------------|
 | Method   | Description     | Method    | Description           |
-|----------|-----------------|-----------|------------------------|
 | Start()  | Turns on the engine | Start() | Starts the service  |
 | Stop()   | Turns off the engine | Stop() | Stops the service   |
 
