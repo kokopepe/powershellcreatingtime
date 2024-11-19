@@ -2,7 +2,7 @@
 
 
 <p align="center">
-  <img src="images/pareto.png" alt="Pareto Principle Visualization" width="600">
+  <img src="intro/aboutcourse/images/pareto.png" alt="Pareto Principle Visualization" width="600">
 </p>
 
 
@@ -13,23 +13,21 @@ In our PowerShell training we want to focus on the 20%  that will bring you the 
 <details>
 <summary>📚 Pareto Principle (Click to expand)</summary>
 
-The Pareto Principle named after Vilfredo Pareto's observation that 80% of Italy's land was owned by just 20% of the population. His personal observations extended to his garden, where he noticed that 20% of his pea pods produced 80% of the peas.
+The Pareto Principle, named after economist Vilfredo Pareto, was first formulated when he observed economic patterns in society. While originally developed in an economic context, this principle has since been found to occur naturally across many different aspects of life.
 
 This distribution pattern has since been observed across numerous fields:
 - **Business**: 20% of customers generate 80% of revenue
-- **Agriculture**: 20% of plants yield 80% of crops
 - **Software**: 80% of users only use 20% of features
 - **Productivity**: 20% of our efforts produce 80% of our results
-- **Project Management**: 20% of project defects cause 80% of problems
 
-These patterns consistently demonstrate how a vital few inputs drive the majority of outputs, making the principle invaluable for prioritization and resource allocation.
+These patterns consistently demonstrate how a vital **few inputs drive the majority of outputs**, making the principle invaluable for prioritization and resource allocation.
 </details>
 
-- 20% of PowerShell most important cmdlets you'll be solving 80% of your daily tasks
-- Learning these core cmdlets (like `Get-Command`, `Get-Help`, `Get-Member`)
-- Understanding the Pipeline and the 
+- 80% of the automation tasks are created with the 20% of the most used cmdlets
+- Learning these core fundamentals with  (like `Get-Command`, `Get-Help`, `Get-Member`)
+- Understanding the Pipeline and the Object-Orientation of PowerShell
+- Encouraging to start small and build step by step
 
-- 80% of your scripts will use just 20% of coding patterns
 
 ## A Colleague's Perspective
 
@@ -41,6 +39,7 @@ My goal is to share practical, real-world experience as i have been working with
 ## Project-Based Learning
 
 This training isn't just about learning a list of commands and syntax.
+
 Lets try to get something useful. 
 We'll work towards creating a practical project that you can:
 
