@@ -126,7 +126,7 @@ finally {
 Here's our complete script that brings everything together:
 
 # SystemInfoGatherer.ps1
-
+```powershell
 <#
 .SYNOPSIS
 Gathers detailed system information and optionally exports it to a CSV or HTML file.
@@ -234,21 +234,27 @@ process {
 end {
     Write-Verbose "System information gathering completed."
 }
+```
 
-# To run this script, save it as SystemInfoGatherer.ps1 and execute it in PowerShell:
-# .\SystemInfoGatherer.ps1
-# Or with parameters:
-# .\SystemInfoGatherer.ps1 -IncludeDiskInfo -ExportToCSV -ExportToHTML
+### To run this script, save it as SystemInfoGatherer.ps1 and execute it in PowerShell:
+```powershell
+ .\SystemInfoGatherer.ps1
+```
+### Or with parameters:
 
-# Main script execution
+```powershell
+.\SystemInfoGatherer.ps1 -IncludeDiskInfo -ExportToCSV -ExportToHTML
+```
+
+## Main script execution
+
 To run this script, save it as SystemInfoGatherer.ps1 and execute it in PowerShell:
 
+```powershell
 .\SystemInfoGatherer.ps1
+```
 
 This script demonstrates the progression from basic cmdlets to advanced functions, all focused on gathering useful system information using WMI.
-
-
-
 
 ## 7. Fun with Speech Synthesis: Building Complexity
 
