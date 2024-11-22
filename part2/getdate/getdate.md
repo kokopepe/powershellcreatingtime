@@ -2,6 +2,10 @@
 
 In PowerShell, working with dates and times is a common task, and the `Get-Date` cmdlet is your trusty companion for this. It returns a `DateTime` object, which is much more than just a simple string or number.
 
+lets compare this with the date command in cmd. what is the difference?
+cmd date
+and powershell get-date
+
 ```powershell
 $today = Get-Date
 

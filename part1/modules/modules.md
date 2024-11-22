@@ -68,7 +68,16 @@ PowerShell repositories are centralized storage locations for PowerShell modules
    - You can specify a repository using the `-Repository` parameter in these commands.
 
 
-3. **Autoloading**:  This means you don't always need to explicitly import a module before using its commands.
+4. Autoloading: This feature allows PowerShell to automatically import a module the first time you use one of its commands, without needing to explicitly import it with `Import-Module`. 
+
+   - **How It Works**: When you run a command that is not currently available in your session, PowerShell searches the module paths specified in `$env:PSModulePath` for a module that exports the command. If found, PowerShell imports the module automatically.
+   
+   - **Configuration**: Autoloading is enabled by default in PowerShell 3.0 and later. You can control this behavior using the `$PSModuleAutoLoadingPreference` variable:
+     - Set to `All` (default) to enable autoloading for all modules.
+     - Set to `ModuleQualified` to only autoload modules when commands are prefixed with the module name (e.g., `ModuleName\Command`).
+     - Set to `None` to disable autoloading entirely, requiring manual imports.
+
+   - **Benefits**: Autoloading simplifies script writing and reduces the need to manage module imports manually, making scripts cleaner and more efficient.
 
 ### Key Module Commands
 

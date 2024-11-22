@@ -121,7 +121,7 @@ finally {
 - The `finally` block contains code that always runs, regardless of whether an error occurred.
 
 
-## 6. Final Script
+## 7. Final Script
 
 Here's our complete script that brings everything together:
 
@@ -256,11 +256,11 @@ To run this script, save it as SystemInfoGatherer.ps1 and execute it in PowerShe
 
 This script demonstrates the progression from basic cmdlets to advanced functions, all focused on gathering useful system information using WMI.
 
-## 7. Fun with Speech Synthesis: Building Complexity
+## 8. Fun with Speech Synthesis: Building Complexity
 
 Let's explore PowerShell's speech synthesis capabilities, starting simple and gradually adding complexity.
 
-### 7.1 Basic Speech Output
+### 8.1 Basic Speech Output
 
 ```powershell
 function Speak-Simple {
@@ -271,7 +271,7 @@ function Speak-Simple {
 Speak-Simple
 ```
 
-### 7.2 Adding a Parameter
+### 8.2 Adding a Parameter
 
 ```powershell
 function Speak-WithParam {
@@ -285,7 +285,7 @@ function Speak-WithParam {
 Speak-WithParam -Message "PowerShell is awesome!"
 ```
 
-### 7.3 Multiple Parameters and Default Values
+### 8.3 Multiple Parameters and Default Values
 
 ```powershell
 function Speak-MultiParam {
@@ -301,7 +301,7 @@ function Speak-MultiParam {
 Speak-MultiParam -Message "Can you hear me?" -Volume 75
 ```
 
-### 7.4 Parameter Validation
+### 8.4 Parameter Validation
 
 ```powershell
 function Speak-Validated {
@@ -321,7 +321,7 @@ function Speak-Validated {
 Speak-Validated -Message "This message is required!" -Volume 50
 ```
 
-### 7.5 Advanced Function with Pipeline Support
+### 8.5 Advanced Function with Pipeline Support
 
 ```powershell
 function Speak-Advanced {

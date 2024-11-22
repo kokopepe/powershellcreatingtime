@@ -50,7 +50,7 @@ We'll work towards creating a practical project that you can:
 
 ## Coaching
 
-As within 2 day we can not cover everything, we can schedule a follow up session to continue on your project.
+Recognizing that our two-day course cannot cover every aspect of PowerShell, We can do a follow-up to create a continuous learning environment to help you build on the foundational skills acquired during the course and develop advanced capabilities over time that can help you and your team.
 
 ## Orgainzation 
 

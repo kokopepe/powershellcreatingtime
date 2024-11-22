@@ -14,6 +14,32 @@ function Verb-Noun {
 }
 ```
 
+# Convert this code into a function
+
+```powershell
+$downloadsPath = join-path $env:USERPROFILE '\Downloads'
+$toDeletePath = Join-Path -Path $downloadsPath -ChildPath 'todelete'
+
+# Create todelete folder if it doesn't exist
+if (-not (Test-Path -Path $toDeletePath)) {
+    New-Item -ItemType Directory -Path $toDeletePath
+} 
+# Get current date and calculate date 1 month ago
+$Today = get-date 
+$oneMonthAgo = $Today.AddMonths(-1)
+
+# Get files older than 1 month and move them
+Get-ChildItem -Path $downloadsPath -File | 
+    Where-Object { $_.LastWriteTime -lt $oneMonthAgo } | 
+    ForEach-Object {
+            Move-Item -Path $_.FullName -Destination $toDeletePath -ErrorAction Stop
+            Write-Host "Moved $($_.Name) to todelete folder"
+        }
+```
+    
+
+
+
 The 'Verb-Noun' naming convention is important in PowerShell. Use approved verbs (you can see the list with `Get-Verb` cmdlet) for consistency.
 
 ## Creating a Simple Function
