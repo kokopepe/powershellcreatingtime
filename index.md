@@ -17,11 +17,15 @@ And as a summary project we will create a script that will automate a task.
 
 [About the Course](intro/aboutcourse/about.md)
 
-[What is PowerShell?](intro/whatispowershell/whatispowershell.md)
-
 [The Future of IT in the Age of AI](intro/thefutureofit.md/futureofit.md)
 
+[Generalist vs Specialist and the 10X Engineer](intro/generalistvsspecialist/generalistspecialist.md) 
+
 [Evaluating Some Tools](intro/tools/evaluatingsometools.md)
+
+[What is PowerShell?](intro/whatispowershell/whatispowershell.md)
+
+[Debate](intro/debate/debate.md)
 
 
 
