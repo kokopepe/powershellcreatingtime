@@ -1,10 +1,13 @@
-# 🧑‍💻 Generalist vs Specialist
+# 🧑‍💻 The Future of IT in the Age of AI
+
+##  Specialist vs Generalist ?
+
 
 <div style="display: flex; gap: 40px; align-items: flex-start; margin-top: 30px;">
 
 <div style="flex: 1; background: #f8f9fa; border-radius: 10px; padding: 24px;">
   <h2 style="text-align: center;">🛠️ The Generalist</h2>
-  <ul style="font-size: 18x;">
+  <ul style="font-size: 18px;">
     <li>🌐 <b>Broad Knowledge:</b> Comfortable with many tools, technologies, and domains.</li>
     <li>🔄 <b>Adaptable:</b> Can quickly switch between tasks and learn new skills.</li>
     <li>🤝 <b>Connector:</b> Bridges gaps between teams and disciplines.</li>
@@ -26,14 +29,14 @@
 
 ---
 
-# 💥 The 10x Engineer
+## 💥 The 10x Engineer
 
 - 🚀 <b>What is a 10x Engineer?</b> A "10x engineer" is someone whose impact, productivity, or output is considered to be 10 times greater than that of an average engineer.
 
 - 🌟 <b>Despite what I wrote about the generalist and the specialist </b> There is also a possibility of emerging new role. It is the already "leading expert" who is capable of leverage 10x factor with IA.  
 It can replace multiple less senior and junior roles within the organization which are not adjusting to new reality. It can
 
----
+
 
 
 ## 🤔 in AI is time for the Generalist or for the Specialist?
@@ -42,14 +45,21 @@ It can replace multiple less senior and junior roles within the organization whi
 - But there is also the possibility to go down the path of leveraging the impact IA for an  specialist and maximize it becoming a 10x engineer (Specialist in times of AI)
 
 <br>
----
 
-# 🧠 Human Advantage: Soft Skills
+## 🧠 Human Advantage: Soft Skills
 
-  🎨 <b>Creative & Contextual Insight:</b> Humans excel at thinking outside the box and understanding context that AI may miss.
-  🤝 <b>Collaborative Innovation:</b> Building relationships, mentoring, and driving synergy within teams.
-  ⚖️ <b>Ethical & Moral Judgment:</b> Complex decisions often require human values, empathy, and responsibility.
-  🧭 <b>Strategic Oversight:</b> Human teams set vision, ensure quality, and address unforeseen challenges.
+- 🎨 <b>Creative & Contextual Insight:</b> Humans excel at thinking outside the box and understanding context that AI may miss.<br>
+- 🤝 <b>Collaborative Innovation:</b> Building relationships, mentoring, and driving synergy within teams.<br>
+- ⚖️ <b>Ethical & Moral Judgment:</b> Complex decisions often require human values, empathy, and responsibility.<br>
+- 🧭 <b>Strategic Oversight:</b> Human teams set vision, ensure quality, and address unforeseen challenges.<br>
+
+
+## 🏗️ T-Shaped Skills: The Modern Advantage
+
+  - 🔎 <b>Deep Expertise:</b> Become an expert in at least one domain—be it a programming language, platform, product, methodology, or even a soft skill. Be authoritative in your specialty.<br>
+  - 🌐 <b>Broad Knowledge:</b> Build general knowledge across multiple areas (e.g., Python, API, ServiceNow, PowerShell, AWS, Azure, SQL). Understand business processes and workflows within your organization.</br>
+  - 🤖 <b>Leverage AI to Connect the Dots:</b> Use AI to combine your broad skills and technologies, creating innovative solutions that add value. <br>
+  - 💡 <b>Soft Skills Matter:</b> Creative problem-solving, cross-functional collaboration, and strategic thinking become even more valuable. Use your contextual knowledge and AI tools together to maximize your impact.</br>
 
 
 ---
