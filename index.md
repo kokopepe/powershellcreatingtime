@@ -20,9 +20,9 @@ Welcome to the PowerShell Training course focused on Creating Time. This compreh
 
 **Two main concepts we want to teach:**
 
-- 🖥️ **Understanding the Shell. The Pipeline.**
-- 🧑‍💻 **Learning the Language. Understanding Objects Oriented.**
-- 🏁 **As a summary project, we will create a script that will automate a task**
+-  **Understanding the Shell. The Pipeline.**
+-  **Learning the Language. Understanding Objects Oriented.**
+-  **As a summary project, we will create a script that will automate a task**
 
 ---
 
@@ -67,8 +67,8 @@ Welcome to the PowerShell Training course focused on Creating Time. This compreh
 
 ##  Part 3: Creating Your Own Scripts
 
-1. [🧩 -  Creating a Function](part3/functions/functions.md)
-2. [📜 -  Creating a Script](part3/scripts/howtoscript.md)
+1. [📜 -  Creating a Function](part3/functions/functions.md)
+2. [🏁 -  Creating a Script](part3/scripts/howtoscript.md)
 
 ---
 
