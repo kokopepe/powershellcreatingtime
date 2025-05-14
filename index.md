@@ -8,7 +8,7 @@ a:hover {
 }
 </style>
 
-<div style="text-align: center; margin-bottom: 24px; background: #20588F; padding: 16px 0;">
+<div style="text-align: center; margin-bottom: 24px; background: #214984; padding: 16px 0;">
   <img src="images/creatingtime.png" alt="PowerShell Creating Time" style="max-width: 100%; height: 150px; object-fit: cover;">
 </div>
 

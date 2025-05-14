@@ -6,7 +6,7 @@ PowerShell scales with your skill level; you can start with basic commands and g
 
 Rapid Growth from Beginner to Pro
 
-You don’t just learn code—you learn how to solve real-world problems.
+You don't just learn code—you learn how to solve real-world problems.
 
 AI tools make the learning curve smoother by suggesting code and troubleshooting issues.
 
@@ -18,28 +18,72 @@ AI tools make the learning curve smoother by suggesting code and troubleshooting
   <img src="intro/tools/images/amazonq.png" alt="Amazon Q" style="width: 48%; height: auto;">
 </div>
 
-## AI Tools for Coding: Enhancing Developer Productivity
+## 🚀 AI Tools for Coding: Enhancing Developer Productivity
 
-- LLMs (Large Language Models) excel in programming contexts:
+Modern AI coding assistants have revolutionized software development by providing intelligent code suggestions, debugging help, and documentation support. These tools leverage Large Language Models (LLMs) to understand context and generate high-quality code.
 
-- Programming languages are "closed domains" with well-defined rules. LLMs can effectively learn and apply these rules
+### 🎯 Why AI Tools Excel in Programming
+- Programming languages have well-defined syntax and patterns that LLMs can effectively learn
+- Code context is highly structured and predictable
+- AI can analyze millions of code examples to understand best practices
+- Real-time feedback helps developers learn and improve their coding skills
 
+---
 
+### 🛠️ Leading AI Coding Assistants
 
-#   GitHub Copilot:
-     - AI pair programmer that suggests code completions
-     - Integrates directly into popular IDEs
-     - Learns from context and comments to generate relevant code
+#### 🤖 GitHub Copilot
+- Powered by OpenAI's Codex model
+- Provides real-time code suggestions as you type
+- Understands natural language comments and converts them to code
+- Supports multiple programming languages and frameworks
+- Integrates with popular IDEs including VS Code, Visual Studio, and JetBrains
+- Features chat interface for code explanations and modifications
 
-#   Amazon Q:
-     - AI-powered assistant for AWS developers
-     - Helps with code generation, debugging, and AWS-specific tasks
-     - Provides explanations and best practices.
+> 🔗 [Get GitHub Copilot](https://github.com/features/copilot) | [Documentation](https://docs.github.com/copilot) | [Pricing](https://github.com/features/copilot#pricing)
 
-#   Codeium:
-     - Free AI coding assistant.
-     - Features advanced code completion and generation
-     - Includes code refactoring and transformation capabilities
-     - Available for multiple IDEs including VS Code, JetBrains, and Vim
+#### 🔧 Amazon CodeWhisperer
+- Enterprise-grade AI coding companion
+- Built-in security scanning and code quality checks
+- Supports multiple programming languages
+- Provides real-time code suggestions and completions
+- Integrates with popular IDEs and AWS services
+- Includes built-in security scanning and code quality checks
+
+> 🔗 [Get CodeWhisperer](https://aws.amazon.com/codewhisperer/) | [Documentation](https://docs.aws.amazon.com/codewhisperer/) | [Pricing](https://aws.amazon.com/codewhisperer/pricing/)
+
+#### 💡 Codeium
+- Free AI coding assistant with advanced features
+- Offers intelligent code completion and generation
+- Includes code refactoring and transformation capabilities
+- Supports multiple IDEs including VS Code, JetBrains, and Vim
+- Provides chat interface for code explanations
+- Includes built-in documentation generation
+
+> 🔗 [Get Codeium](https://codeium.com/) | [Documentation](https://docs.codeium.com/) | [Pricing](https://codeium.com/pricing)
+
+#### ✨ Cursor
+- Modern AI-first code editor
+- Built-in AI chat interface for code assistance
+- Advanced code generation and refactoring capabilities
+- Real-time code suggestions and completions
+- Integrated debugging and testing support
+- Supports multiple programming languages and frameworks
+
+> 🔗 [Get Cursor](https://cursor.sh/) | [Documentation](https://cursor.sh/docs) | [Pricing](https://cursor.sh/pricing)
+
+---
+
+### 📚 Best Practices and Tips for Using AI Coding Tools
+     1. Use AI as a pair programmer
+     2. Review and understand generated code before implementing
+     3. Use AI to learn new programming patterns and best practices
+     4. Combine AI suggestions with your own expertise and judgment
+     5. Improved natural language to code translation 
+     6. Ask for explanations of complex code
+     7. Leverage AI for quick prototyping and proof of concepts
+     8. Use AI to help with code documentation and comments
+     9. Let AI assist in debugging and error resolution
+
 
 
