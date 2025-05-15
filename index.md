@@ -30,15 +30,14 @@ Welcome to the PowerShell Training course focused on Creating Time. This compreh
 
 - [📚 About the Course](intro/aboutcourse/about.md)
 - [🤖 The Future of IT in the Age of AI](intro/thefutureofit.md/futureofit.md)
-- [🧑‍🔬 Generalist vs Specialist and the 10X Engineer](intro/generalistvsspecialist/generalistspecialist.md)
 - [🛠️ Evaluating Some Tools](intro/tools/evaluatingsometools.md)
-- [💡 What is PowerShell?](intro/whatispowershell/whatispowershell.md)
 - [🗣️ Debate](intro/debate/debate.md)
 
 ---
 
 ##  Part 1: Understanding the Shell
 
+0. [ >_ - What is PowerShell?](part1/whatispowershell/whatispowershell.md)
 1. [🔢 -  PowerShell Versions](part1/PowershellVersions/index.md)
 2. [⚡ - Cmdlets 100](part1/Cmdlets100/index.md)
 3. [⚡ - Cmdlets 101](part1/Cmdlets101/index.md)
