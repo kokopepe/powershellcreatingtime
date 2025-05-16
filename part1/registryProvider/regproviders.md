@@ -12,7 +12,7 @@ A **PowerShell provider** is an adapter that lets you access and manage differen
 - **Active Directory**: Interact with AD objects (if module installed).
 - **SQLServer**: Work with SQL Server objects (with SQLServer module).
 - **Azure**: Browse Azure resources (with Az module).
-![Azure Provider Example](part1/registryProvider/images/azureprovider.png)
+
 
 By default, PowerShell has the following registry provider:
 

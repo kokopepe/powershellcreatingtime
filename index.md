@@ -49,7 +49,7 @@ Welcome to the PowerShell Training course focused on Creating Time. This compreh
 9. [🗄️ - Provider](part1/registryProvider/regproviders.md)
 10. [🌐 - Remoting and Rest Methods](part1/remoting/remoting.md)
 11. [➕ - Operators](part1/operators/powershell_operators.md)
-12. [📝 - Practice Exercises](part1/PracticeExercises/UserParameters/index.md)
+12. [🤖  Opeanai Testing with Powershell](part1/iainuse/iainuse.md)
 
 ---
 
