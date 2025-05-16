@@ -24,19 +24,19 @@ PowerShell provides an interactive command-line interface (CLI) for system manag
 
 ## 2. PowerShell as a Scripting Language
 
-
-<div style="background-color: #f0f0f0; padding: 15px; border-radius: 5px; border-left: 5px solid #0066cc;">
-PowerShell stands out because it is:
-
-- **OBJECT-ORIENTED**: Work directly with structured data objects rather than raw text
-- **PIPELINE-DRIVEN**: Chain commands together to create powerful automation workflows
-These two core concepts make it uniquely effective for automation and data manipulation.
+<div style="display: flex; align-items: flex-start; gap: 24px;">
+  <div style="background-color: #f0f0f0; padding: 15px; border-radius: 5px; border-left: 5px solid #0066cc; flex: 2;">
+    PowerShell stands out because it is:
+    <ul>
+      <li><b>OBJECT-ORIENTED</b>: Work directly with structured data objects rather than raw text</li>
+      <li><b>PIPELINE-DRIVEN</b>: Chain commands together to create powerful automation workflows</li>
+    </ul>
+    These two core concepts make it uniquely effective for automation and data manipulation.
+  </div>
+  <div style="flex: 1; display: flex; justify-content: flex-end;">
+    <img src="part1/whatispowershell/images/maxpower.png" alt="Max Power" style="max-width: 100%; height: auto; border-radius: 5px;">
+  </div>
 </div>
-
-<p align="right">
-  <img src="part1/whatispowershell/images/maxpower.png" alt="Max Power" width="200">
-</p>
-
 
 As a scripting language, PowerShell offers powerful features for automation:
 
