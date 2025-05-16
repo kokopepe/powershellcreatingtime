@@ -34,7 +34,7 @@ These two core concepts make it uniquely effective for automation and data manip
 </div>
 
 <p align="right">
-  <img src="intro/aboutcourse/images/maxpower.png" alt="Max Power" width="200">
+  <img src="part1/whatispowershell/images/maxpower.png" alt="Max Power" width="200">
 </p>
 
 
