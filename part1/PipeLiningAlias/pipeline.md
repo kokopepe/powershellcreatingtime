@@ -31,7 +31,7 @@ For example, in the command:
 Get-Process | Where-Object { $_.CPU -gt 10 } | Select-Object Name, CPU
 ```
 
-![Production Line](images/productionline.png){: .center-image }
+![Production Line](part1/PiPeLininngAlias/images/productionline.png){: .center-image }
 
 
 PowerShell does the following:

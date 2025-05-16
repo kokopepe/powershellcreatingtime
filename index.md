@@ -46,7 +46,7 @@ Welcome to the PowerShell Training course focused on Creating Time. This compreh
 6. [🔗 - PipeLines](part1/PipeLiningAlias/pipeline.md)
 7. [⭐ - The Every Day Use cmdlets](part1/TheParetoCmdlets/paretocmdlets.md)
 8. [🧮 - Calculated Properties](part1/CalculatedProperties/calculatedProperties.md)
-9. [🗄️ - Registry Provider](part1/registryProvider/regproviders.md)
+9. [🗄️ - Provider](part1/registryProvider/regproviders.md)
 10. [🌐 - Remoting and Rest Methods](part1/remoting/remoting.md)
 11. [➕ - Operators](part1/operators/powershell_operators.md)
 12. [📝 - Practice Exercises](part1/PracticeExercises/UserParameters/index.md)

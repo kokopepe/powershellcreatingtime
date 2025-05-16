@@ -68,16 +68,22 @@ PowerShell repositories are centralized storage locations for PowerShell modules
    - You can specify a repository using the `-Repository` parameter in these commands.
 
 
-4. Autoloading: This feature allows PowerShell to automatically import a module the first time you use one of its commands, without needing to explicitly import it with `Import-Module`. 
+4. **Autoloading**: PowerShell automatically loads modules when you use their commands. This means you don't need to manually import modules in most cases.
 
-   - **How It Works**: When you run a command that is not currently available in your session, PowerShell searches the module paths specified in `$env:PSModulePath` for a module that exports the command. If found, PowerShell imports the module automatically.
-   
-   - **Configuration**: Autoloading is enabled by default in PowerShell 3.0 and later. You can control this behavior using the `$PSModuleAutoLoadingPreference` variable:
-     - Set to `All` (default) to enable autoloading for all modules.
-     - Set to `ModuleQualified` to only autoload modules when commands are prefixed with the module name (e.g., `ModuleName\Command`).
-     - Set to `None` to disable autoloading entirely, requiring manual imports.
+   ```powershell
+   # Example: These commands will work without explicit Import-Module
+   Get-Service        # Automatically loads Microsoft.PowerShell.Management
+   Get-ADUser        # Automatically loads ActiveDirectory module
+   ```
 
-   - **Benefits**: Autoloading simplifies script writing and reduces the need to manage module imports manually, making scripts cleaner and more efficient.
+   You can control this behavior with `$PSModuleAutoLoadingPreference`:
+   ```powershell
+   $PSModuleAutoLoadingPreference = 'All'           # Default: Load all modules automatically
+   $PSModuleAutoLoadingPreference = 'ModuleQualified' # Only load when using ModuleName\Command
+   $PSModuleAutoLoadingPreference = 'None'          # Disable autoloading
+   ```
+
+   > Note: While autoloading is convenient, explicitly importing modules in scripts is considered best practice for production environments as it makes dependencies clear.
 
 ### Key Module Commands
 

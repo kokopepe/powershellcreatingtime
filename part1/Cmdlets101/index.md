@@ -140,6 +140,34 @@ We know:
 
 Try to find this cmdlet using `Get-Command`.
 
+## Exercise 3: Combining Cmdlets for Real Tasks
+
+Let's put our knowledge of cmdlets to work with a practical example. Imagine you need to find all processes that are using more than 100MB of memory and save this information to a file.
+
+Try these commands step by step:
+
+```powershell
+# First, get all processes
+Get-Process
+
+# Then, filter for processes using more than 100MB
+Get-Process | Where-Object {$_.WorkingSet -gt 100MB}
+
+# Finally, select specific properties and save to a file
+Get-Process | 
+    Where-Object {$_.WorkingSet -gt 100MB} | 
+    Select-Object Name, WorkingSet, CPU | 
+    Export-Csv -Path "LargeProcesses.csv"
+```
+
+Notice how we:
+1. Used `Get-Process` to retrieve data
+2. Used `Where-Object` to filter
+3. Used `Select-Object` to choose specific properties
+4. Used `Export-Csv` to save the results
+
+This shows how cmdlets can be combined to create powerful solutions. Each cmdlet does one thing well, but together they can accomplish complex tasks.
+
 ## Additional Notes
 
 - `Get-Command *` shows all commands, including non-native ones.
