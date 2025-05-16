@@ -1,4 +1,3 @@
-
 # PowerShell Providers: A General Overview
 
 ## What is a PowerShell Provider?
@@ -11,8 +10,9 @@ A **PowerShell provider** is an adapter that lets you access and manage differen
 - **Registry**: Browse and edit the Windows Registry.
 - **Certificate**: Manage certificates on your system.
 - **Active Directory**: Interact with AD objects (if module installed).
-- **Azure**: Browse Azure resources (with Az module).
 - **SQLServer**: Work with SQL Server objects (with SQLServer module).
+- **Azure**: Browse Azure resources (with Az module).
+![Azure Provider Example](part1/registryProvider/images/azureprovider.png)
 
 By default, PowerShell has the following registry provider:
 
@@ -101,6 +101,8 @@ $certsExpiringSoon | Export-Csv -Path "C:\Temp\ExpiringCerts.csv" -NoTypeInforma
 
 This creates a report you can review or send to a team.
 
+
 ## Conclusion
+
 
 PowerShell providers make it easy to work with a variety of data stores using familiar commands. Try exploring different providers with `Get-PSProvider` and see what you can manage from the shell!
