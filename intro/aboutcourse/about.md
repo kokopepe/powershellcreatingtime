@@ -1,5 +1,28 @@
-# Our Training Approach: The Pareto Principle in Action
+# Our Training Approach
 
+
+## A Colleague's Perspective
+
+I'm not approaching this as a traditional teacher but as your colleague from UMB.
+
+My goal is to share practical, real-world experience as i have been working with PowerShell for over 10 years and also within UMB a similar number of years.
+
+
+## Project-Based Learning
+
+This training isn't just about learning a list of commands and syntax.
+
+Lets try to get something useful. 
+We'll work towards creating a practical project that you can:
+
+- Implement in your Team or your daily work.
+- Customize for your specific needs
+- Use as a foundation for future automation
+
+
+## Coaching
+
+Recognizing that our two-day course cannot cover every aspect of PowerShell, We can do a follow-up to create a continuous learning environment to help you build on the foundational skills acquired during the course and develop advanced capabilities over time that can help you and your team.
 
 <p align="center">
   <img src="intro/aboutcourse/images/pareto.png" alt="Pareto Principle Visualization" width="600">
@@ -28,29 +51,10 @@ These patterns consistently demonstrate how a vital **few inputs drive the major
 - Understanding the Pipeline and the Object-Orientation of PowerShell
 - Encouraging to start small and build step by step
 
+## Quick Introduction Round
 
-## A Colleague's Perspective
-
-I'm not approaching this as a traditional teacher but as your colleague from UMB.
-
-My goal is to share practical, real-world experience as i have been working with PowerShell for over 10 years and also within UMB a similar number of years.
-
-
-## Project-Based Learning
-
-This training isn't just about learning a list of commands and syntax.
-
-Lets try to get something useful. 
-We'll work towards creating a practical project that you can:
-
-- Implement in your Team or your daily work.
-- Customize for your specific needs
-- Use as a foundation for future automation
-
-
-## Coaching
-
-Recognizing that our two-day course cannot cover every aspect of PowerShell, We can do a follow-up to create a continuous learning environment to help you build on the foundational skills acquired during the course and develop advanced capabilities over time that can help you and your team.
+Let’s start by getting to know each other.  
+Please introduce yourself by sharing your name, your role at UMB, how long you’ve been with the company, and your experience with PowerShell.
 
 ## Orgainzation 
 
