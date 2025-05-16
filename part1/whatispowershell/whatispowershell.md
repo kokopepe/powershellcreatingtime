@@ -59,7 +59,7 @@ This progression from simple commands to full scripts is natural in PowerShell p
 - You can test code interactively in the shell, then copy it directly into scripts
 - From one-liners to full scripts
 
-## Task Definition for Tomorrow's Lab Workshop
+## 4. Task Definition for Tomorrow's Lab Workshop
 
 <div align="center" style="font-size:2em;">
 🤖
@@ -69,13 +69,13 @@ This progression from simple commands to full scripts is natural in PowerShell p
 
 > **Task Definition for Tomorrow's Lab Workshop**
 >
-> Consider a repetitive task, a process you wish was easier, or something you do often on your computer. Jot down your idea—this will help guide your learning and practice with PowerShell automation!
+> Identify a routine task, a process you'd like to streamline. Note your idea—this will guide your hands-on experience lab on day 2
 
 
 
 ## 🚀 Why Automation?
 
-### 1. **Efficiency and Productivity**
+###  **Efficiency and Productivity**
 - We need to **create time** by **doing more with less**.
 - Automation enables that. It turns a 5-minute manual task into a repeatable process that takes seconds — no matter how many times you run it.
 
@@ -85,7 +85,7 @@ This progression from simple commands to full scripts is natural in PowerShell p
 
 ---
 
-### Key Automation Principles (at a Glance)
+## Key Automation Principles (at a Glance)
 
 - **Automate for scale and efficiency**—focus on tasks that save significant time when repeated.
 - **Not everything should be automated**—rare, ever-changing, or highly customized tasks may not be worth the effort.
