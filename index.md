@@ -43,13 +43,15 @@ Welcome to the PowerShell Training course focused on Creating Time. This compreh
 3. [⚡ - Cmdlets 101](part1/Cmdlets101/index.md)
 4. [📦 - Modules](part1/modules/modules.md)
 5. [❓ - Get-Help](part1/Get-Help/gethelp.md)
-6. [🔗 - PipeLines](part1/PipeLiningAlias/pipeline.md)
-7. [⭐ - The Every Day Use cmdlets](part1/TheParetoCmdlets/paretocmdlets.md)
-8. [🧮 - Calculated Properties](part1/CalculatedProperties/calculatedProperties.md)
-9. [🗄️ - Provider](part1/registryProvider/regproviders.md)
-10. [🌐 - Remoting and Rest Methods](part1/remoting/remoting.md)
-11. [➕ - Operators](part1/operators/powershell_operators.md)
-12. [🤖  Opeanai Testing with Powershell](part1/iainuse/iainuse.md)
+6. [ | - PipeLines](part1/PipeLiningAlias/pipeline.md)
+7. [⚙️ - Objects and Vars](part1/objectoriented/objects_variables.md)
+8. [⭐ - The Every Day Use cmdlets](part1/TheParetoCmdlets/paretocmdlets.md)
+9. [🧮 - Calculated Properties](part1/CalculatedProperties/calculatedProperties.md)
+10. [🗄️ - Provider](part1/registryProvider/regproviders.md)
+11. [🌐 - Remoting and Rest Methods](part1/remoting/remoting.md)
+12. [➕ - Operators](part1/operators/powershell_operators.md)
+13. [🔒 - Security](part1/security/security.md) 
+14. [🤖  Opeanai Testing with Powershell](part1/iainuse/iainuse.md)
 
 ---
 
