@@ -202,4 +202,19 @@ While the systems (Azure AD, traditional AD, and AWS IAM) are different, the gen
 - Exporting the Data: Once the data is gathered and formatted, the final step is exporting it, typically into a CSV file. This is done using export-csv in each of the commands.
 
 
+## The 3 Amigos
+
+- These three essential cmdlets represent the core 20% of PowerShell knowledge that will give you 80% of the results.
+- Remembering
+
+![Three Amigos ](/part1/Cmdlets101/images/3amigos.jpg)
+
+
+### Get-Command
+- Shows all available PowerShell commands in your session
+### Get-Help
+- Displays detailed documentation and usage examples for any cmdlet
+### Get-Member
+- Reveals all properties and methods available for any PowerShell object
+
 

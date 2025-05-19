@@ -57,24 +57,14 @@ By the end, you'll have a better understanding of what cmdlets and modules are, 
    # See what commands are in a specific module
    Get-Command -Module Microsoft.PowerShell.Management
 
-   # Get detailed information about a module
-   Get-Module -Name Microsoft.PowerShell.Management -ListAvailable | Select-Object *
    ```
 
 ## Task 3: Quick Practice Exercises
 
 Try these simple exercises to get comfortable with cmdlets:
 
-1. **Process Exploration**
-   ```powershell
-   # List all processes
-   Get-Process
 
-   # Find processes using more than 100MB of memory
-   Get-Process | Where-Object { $_.WorkingSet -gt 100MB }
-   ```
-
-2. **File System Basics**
+1. **File System Basics**
    ```powershell
    # List files in current directory
    Get-ChildItem
@@ -124,4 +114,3 @@ Try these simple exercises to get comfortable with cmdlets:
 2. Experiment with different parameters for the cmdlets you used
 3. Try combining cmdlets using the pipeline (|)
 
-Remember: The best way to learn PowerShell is through practice. Don't be afraid to experiment with different commands! 
