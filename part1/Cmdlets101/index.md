@@ -207,7 +207,7 @@ While the systems (Azure AD, traditional AD, and AWS IAM) are different, the gen
 - These three essential cmdlets represent the core 20% of PowerShell knowledge that will give you 80% of the results.
 - Remembering
 
-![Three Amigos ](/part1/Cmdlets101/images/3amigos.jpg)
+![Three Amigos ](part1/Cmdlets101/images/3amigos.jpg)
 
 
 ### Get-Command

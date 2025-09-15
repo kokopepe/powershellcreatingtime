@@ -44,7 +44,7 @@ Welcome to the PowerShell Training course focused on Creating Time. This compreh
 4. [📦 - Modules](part1/modules/modules.md)
 5. [❓ - Get-Help](part1/Get-Help/gethelp.md)
 6. [ | - PipeLines](part1/PipeLiningAlias/pipeline.md)
-7. [⚙️ - Objects and Vars](part1/objectoriented/objects_variables.md)
+7. [⚙️ - Objects and Vars](part1/objects/objects_variables.md)
 8. [⭐ - The Every Day Use cmdlets](part1/TheParetoCmdlets/paretocmdlets.md)
 9. [🧮 - Calculated Properties](part1/CalculatedProperties/calculatedProperties.md)
 10. [🗄️ - Provider](part1/registryProvider/regproviders.md)
