@@ -41,8 +41,7 @@ Before you start, ensure you have both core applications installed.
 Extensions are key to turning VS Code into a powerful PowerShell IDE. You can access the Extensions Marketplace by clicking the Extensions icon on the left sidebar.
 
 * **PowerShell:** Search for the official "PowerShell" extension from Microsoft and click "Install". This is the most crucial extension, providing features like syntax highlighting, IntelliSense, and debugging. The extension also includes **PSScriptAnalyzer** by default, which helps check your code for quality and best practices.
-* **GitLens:** An excellent extension for developers who use Git, as it helps you see the history of your code right inside the editor.
-* **vscode-icons:** Adds icons to your files and folders, making it easier to navigate your project at a glance.
+
 
 ### Step 3: Install an AI Assistant (Optional)
 
@@ -53,7 +52,7 @@ AI assistants can act as an intelligent "pair programmer" to help you write code
 GitHub Copilot is a popular choice for its powerful real-time code suggestions.
 
 * **Install:** In the Extensions Marketplace, search for and install the "GitHub Copilot" extension.
-* **Activation:** You'll need to have a GitHub Copilot subscription, but a free trial is often available. You will be prompted to sign in to your GitHub account to authorize and activate the extension.
+* **Activation:** You'll need to have a GitHub Copilot subscription, but a free trial is  available. You will be prompted to sign in to your GitHub account to authorize and activate the extension.
 * **How it Works:** As you type, Copilot provides inline code suggestions. Press `Tab` to accept the suggestion.
 
 #### **Amazon Q Developer (Free Tier Available)**
@@ -82,16 +81,6 @@ Now that your environment is set up, you can write and execute your first script
 * **Improves Quality and Consistency:** Can generate comprehensive test suites and helps enforce coding standards across a team.
 * **Shifts Focus to Strategy:** The developer's role is evolving from writing code to managing and guiding the AI.
 
-
-#### ✨ Cursor
-- AI-first code editor
-- Built-in chat interface
-- Integrated debugging support
-
-> 🔗 [Get Cursor](https://cursor.sh/) | [Documentation](https://cursor.sh/docs) | [Pricing](https://cursor.sh/pricing)
-
----
-
 ### 📚 Best Practices and Tips for Using AI Coding Tools
 1. Use AI as a pair programmer
 2. Review and understand generated code before implementing
@@ -103,6 +92,14 @@ Now that your environment is set up, you can write and execute your first script
 8. Use AI to help with code documentation and comments
 9. Let AI assist in debugging and error resolution
 
+#### ✨ Cursor
+- AI-first code editor
+- Built-in chat interface
+- Integrated debugging support
+
+> 🔗 [Get Cursor](https://cursor.sh/) | [Documentation](https://cursor.sh/docs) | [Pricing](https://cursor.sh/pricing)
+
+---
 
 
 ### 🚀 New Trends and Game-Changing Tools
