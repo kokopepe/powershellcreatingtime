@@ -52,7 +52,7 @@ AI assistants can act as an intelligent "pair programmer" to help you write code
 GitHub Copilot is a popular choice for its powerful real-time code suggestions.
 
 * **Install:** In the Extensions Marketplace, search for and install the "GitHub Copilot" extension.
-* **Activation:** You'll need to have a GitHub Copilot subscription, but a free trial is  available. You will be prompted to sign in to your GitHub account to authorize and activate the extension.
+* **Activation:**  You will be prompted to sign in to your GitHub account to authorize and activate the extension.
 * **How it Works:** As you type, Copilot provides inline code suggestions. Press `Tab` to accept the suggestion.
 
 #### **Amazon Q Developer (Free Tier Available)**
@@ -76,7 +76,7 @@ Now that your environment is set up, you can write and execute your first script
 
 ### The Developer as an AI "Pair Programmer"
 
-* **Automates Repetitive Tasks:** AI generates boilerplate code, freeing developers to focus on higher-level problem-solving.
+* **Automates:** AI generates boilerplate code, freeing developers to focus on higher-level problem-solving.
 * **Accelerates Learning:** Acts as an expert mentor for junior developers by explaining complex code and best practices.
 * **Improves Quality and Consistency:** Can generate comprehensive test suites and helps enforce coding standards across a team.
 * **Shifts Focus to Strategy:** The developer's role is evolving from writing code to managing and guiding the AI.
@@ -102,12 +102,12 @@ Now that your environment is set up, you can write and execute your first script
 ---
 
 
-### 🚀 New Trends and Game-Changing Tools
+### 🚀 New Trend
 
 The current trend is a shift from simple code completion to sophisticated, autonomous agents. These agents understand entire codebases and can implement complex, multi-step features.
 
 * **Contextual Awareness:** The defining feature of today's tools is their ability to understand an entire codebase, not just a single file. Tools like Cursor and Windsurf lead in this area, processing hundreds of files to provide highly accurate suggestions.
 * **Agentic Capabilities:** New tools now have "agent modes" that can perform multi-step tasks autonomously, from implementing a feature described in a natural language prompt to creating and running tests.
 * **AI-Native IDEs:** Tools like Windsurf and Cursor are building new IDEs from the ground up with AI at their core. This deep integration allows them to perform more complex tasks like natural language debugging and codebase-wide refactoring.
-* **Domain-Specific Assistants:** A new wave of tools is emerging that focuses on specific domains. Examples include Vercel's v0 for creating React components and Bolt.new for generating full-stack web applications from a prompt.
+* **Domain-Specific Assistants:** A new wave of tools is emerging that focuses on specific domains. Examples include Vercel's v0 for creating React components and Bolt.new for generating full-stack web applications from a prompt or Replit.
 
